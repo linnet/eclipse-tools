@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin
+   id="dk.kamstruplinnet.projecttransfer"
+   name="%pluginName"
+   version="1.0.7"
+   provider-name="Jesper Kamstrup Linnet"
+   class="dk.kamstruplinnet.projecttransfer.ProjectTransferPlugin">
+
+   <runtime>
+      <library name="projecttransfer.jar">
+         <packages prefixes="dk.kamstruplinnet.projecttransfer"/>
+      </library>
+   </runtime>
+   <requires>
+      <import plugin="org.eclipse.ui.ide" version="3.0.0" match="greaterOrEquals" optional="true"/>
+      <import plugin="org.eclipse.jface.text"/>
+      <import plugin="org.eclipse.ui.workbench.texteditor"/>
+      <import plugin="org.eclipse.ui.editors"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.runtime.compatibility" version="3.0.0" match="greaterOrEquals" optional="true"/>
+      <import plugin="org.eclipse.ui.workbench"/>
+      <import plugin="org.eclipse.jface"/>
+      <import plugin="org.eclipse.jdt.core"/>
+   </requires>
+
+
+   <extension
+         point="org.eclipse.ui.importWizards">
+      <wizard
+            name="%importWizardName"
+            icon="icons/import.gif"
+            class="dk.kamstruplinnet.projecttransfer.ProjectImportWizard"
+            id="dk.kamstruplinnet.projecttransfer.ProjectImport">
+         <description>
+            %importWizardDescription
+         </description>
+      </wizard>
+   </extension>
+   <extension
+         point="org.eclipse.ui.exportWizards">
+      <wizard
+            name="%exportWizardName"
+            icon="icons/export.gif"
+            class="dk.kamstruplinnet.projecttransfer.ProjectExportWizard"
+            id="dk.kamstruplinnet.projecttransfer.ProjectExport">
+         <description>
+            %exportWizardDescription
+         </description>
+      </wizard>
+   </extension>
+
+</plugin>

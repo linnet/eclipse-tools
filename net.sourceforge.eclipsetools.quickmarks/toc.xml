@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- $Header: /cvsroot/eclipse-tools/net.sourceforge.eclipsetools.quickmarks/toc.xml,v 1.1 2004/07/16 00:59:06 deerwood Exp $ -->
+<!DOCTYPE toc SYSTEM 
+	"file:///C:/eclipse/plugins/org.eclipse.help_2.1.2/dtd/toc.dtd">
+<toc label="Quickmarks" topic="readme.html">
+	<topic label="What it does" href="html/what_it_does.html">
+	</topic>
+	<topic label="How to use it" href="html/how_to_use.html">
+	</topic>
+	<topic label="Reference">
+		<topic label="Evidence in the user interface" 
+			href="html/reference/evidence.html">
+		</topic>
+		<topic label="Preference options" href="html/reference/preference.html">
+		</topic>
+		<topic label="Changing visibility in views" 
+			href="html/reference/visibility.html">
+		</topic>
+		<topic label="Switching to another style" 
+			href="html/reference/styles.html">
+		</topic>
+	</topic>
+</toc>
+<!--EOF-->

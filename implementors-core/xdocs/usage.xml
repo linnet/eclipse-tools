@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<document>
+   <properties>
+      <author email="linnet@nospam.users.sourceforge.net">Jesper Kamstrup Linnet</author>
+
+      <title>Usage</title>
+   </properties>
+
+   <body>
+      <section name="Activation of the Open Implementation action">
+            <p>
+            Activating the Open Implementation action is done by pressing Alt+F3 in the Java editor
+            (this shortcut may be customized in the preferences.)
+            The plugin may also be activated in the editor's context menu (the name of the action is "Open Implementation".)
+            </p>
+            <p>
+            If the cursor is located on a method name, Eclipse jumps to the implementing method(s). If the cursor is located on
+            a an interface type (either the type itself or an instance), Eclipse jumps to the implementing type(s).
+            </p>
+            <p>
+            If no matching classes are found, a message is shown in the status line.
+            </p>
+
+         <subsection name="Example">
+            <p>
+            In the code snippet below...
+            </p>
+            <source>
+               Collection elements = ...
+               elements.add("Hello");
+            </source>
+            <p>
+            If you place the cursor on <i>add</i> and invoke the plugin, a dialog with list of implementing classes is shown.
+            In this dialog you can select the method to jump to.
+            </p>
+            <p>
+            <img src="images/dialog.png" title="Dialog for selecting the implementor" alt="Dialog for selecting the implementor" />
+            </p>
+            <p>If only one matching class is found, the plugin jumps directly to the class without showing the dialog.</p>
+            <p>In the example above, you could also have placed the cursor on the elements variable. Invoking the "Open Implementation"
+            function in this case would jump to the implementation class itself.</p>
+         </subsection>
+      </section>
+
+      <section name="Activation of the Open Interface action">
+            <p>
+            Activating the Open Interface action is done by pressing Ctrl+Alt+F3 in the Java editor
+            (this shortcut may be customized in the preferences.)
+            The plugin may also be activated in the editor's context menu (the name of the action is "Open Interface".)
+            </p>
+            <p>
+            If the cursor is located on a method name in a class implementing an interface, Eclipse jumps to the declaration of the 
+            method in the interface. If the cursor is located on a a class (either the type itself or an instance), Eclipse jumps to the
+            interface type(s).
+            </p>
+            <p>
+            If no matching interfaces are found, a message is shown in the status line.
+            </p>
+
+         <subsection name="Example">
+            <p>
+            In the code snippet below...
+            </p>
+            <source>
+               package dk.kamstruplinnet.test;
+
+               public class Test implements ITest {
+
+                   public void someMethod() {
+                       // TODO
+                   }
+               }
+            </source>
+            <p>
+            If you place the cursor on <i>someMethod</i> and invoke the plugin, a dialog with list of interfaces declaring the method is shown.
+            In this dialog you can select the interface to jump to.
+            </p>
+            <p>
+            If only one matching interface is found, the plugin jumps directly to the interface without showing the dialog. 
+            </p>
+         </subsection>
+      </section>
+   </body>
+</document>
+

@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<document>
+   <properties>
+      <author email="linnet@nospam.users.sourceforge.net">Jesper Kamstrup Linnet</author>
+
+      <title>Changes</title>
+   </properties>
+
+   <body>
+     <release version="0.0.15" date="2005-01-08" description="New version to work with Eclipse 3.1 M4+.">
+       <action dev="linnet" type="update" >
+	       Added compatibility with 3.1 M4.<br/>
+		This version is for Eclipse 3.1 M4 (and hopefully later versions). It may be compatible with earlier milestone releases of 3.1.<br/>
+It is _not_ compatible with 2.1.x or 3.0.x. For these versions, please use v0.0.14.
+       </action>
+     </release>
+     <release version="0.0.14" date="2004-07-11" description="Reintroduced Eclipse 2.1.x compatibility. Add ability to jump on type.">
+       <action dev="linnet" type="update" >
+         Reintroduced compatibility with Eclipse 2.1.x. Also added the ability to jump to the implementation
+         class from an interface type.
+       </action>
+     </release>
+     <release version="0.0.13" date="2004-05-23" description="Enhanced EJB method mapping.">
+       <action dev="linnet" type="update" >
+         Enhanced the EJB method mapping functionality. Now also supports jumping between implementation and
+         interface of EJB Home methods (i.e. ejbHomeSomeMethod).
+       </action>
+     </release>
+     <release version="0.0.12" date="2004-04-05" description="Added method mapping functionality.">
+       <action dev="linnet" type="update" >
+         Added method mapping functionality in order to be able to jump to methods on home interfaces.
+         Now for example, finding implementors on home.create(String id) jumps to the ejbCreate method
+         in the bean.
+       </action>
+     </release>
+     <release version="0.0.11" date="2004-01-10" description="Updated to work with Eclipse 3.0M6.">
+       <action dev="linnet" type="update" >
+         Updated the plugin to work with Eclipse 3.0M6. From this version on new versions will
+         only support Eclipse 3.0M6+.
+       </action>
+     </release>
+     <release version="0.0.9" date="2003-06-20" description="Updated to work (again) with Eclipse 2.1.x">
+       <action dev="linnet" type="update">
+         Fixed a problem which prevented the plugin from running on anything but the Eclipse 3.0 stream.
+       </action>
+     </release>
+     <release version="0.0.8" date="2003-06-05">
+       <action dev="linnet" type="update">
+         Added an autofind button on the property page.<br/>
+       </action>
+       <action dev="linnet" type="update">
+         Added a preferences button for setting up the file mask of ejb-jar.xml files.
+       </action>
+     </release>
+     <release version="0.0.7" date="2003-05-25">
+       <action dev="linnet" type="update">
+         Now also considers overriding/overridden methods as candidates.<br/>
+       </action>
+       <action dev="linnet" type="update">
+         EJB awareness: Moved the enablement action to the project's property page.
+       </action>
+     </release>
+     <release version="0.0.6" date="2003-04-04">
+       <action dev="linnet" type="update">
+         Added an action to jump to an interface declaring the selected method.
+       </action>
+     </release>
+     <release version="0.0.5" date="2003-03-28">
+       <action dev="linnet" type="update">
+         Bug fix: Jumping to classes loaded from .jar files (with attached source) is now possible.
+       </action>
+     </release>
+     <release version="0.0.4" date="2003-03-27" description="Initial version">
+       <action dev="linnet" type="update">
+         Initial version
+       </action>
+     </release>
+   </body>
+</document>
+

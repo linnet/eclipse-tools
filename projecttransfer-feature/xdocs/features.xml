@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<document>
+   <properties>
+      <author email="linnet@nospam.users.sourceforge.net">Jesper Kamstrup Linnet</author>
+
+      <title>Features</title>
+   </properties>
+
+   <body>
+      <section name="Features">
+         <p>
+         This Eclipse plugin adds an import and an export wizard. These wizards allow the user
+         to export or import multiple projects in one go, thus e.g. easing the process of creating
+         a new workspace.
+         </p>
+      </section>
+   </body>
+</document>
+

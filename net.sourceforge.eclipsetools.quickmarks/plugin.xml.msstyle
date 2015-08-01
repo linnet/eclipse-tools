@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+   id="net.sourceforge.eclipsetools.quickmarks"
+   name="Quickmarks Both Styles"
+   version="1.0.11"
+   provider-name="Jesper Kamstrup Linnet, Georg Rehfeld"
+   class="net.sourceforge.eclipsetools.quickmarks.QuickmarksPlugin">
+
+   <runtime>
+      <library name="quickmarks.jar"/>
+   </runtime>
+   <requires>
+      <import plugin="org.eclipse.core.resources" version="2.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui" version="2.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.help"/>
+   </requires>
+
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="%actset.label"
+            description="%actset.description"
+            visible="true"
+            id="net.sourceforge.eclipsetools.quickmarks.actionSet">
+         <action
+               toolbarPath="quickmarks"
+               id="net.sourceforge.eclipsetools.quickmarks.gotoMark100"
+               hoverIcon="icons/goprev_hover.gif"
+               class="net.sourceforge.eclipsetools.quickmarks.GotoMarkAction"
+               definitionId="net.sourceforge.eclipsetools.quickmarks.gotoMark100Cmd"
+               icon="icons/goprev.gif"
+               helpContextId="net.sourceforge.eclipsetools.quickmarks.ctx_act_gotomark"
+               label="%act.gotomark100.label.ms"
+               menubarPath="navigate/additional"
+               tooltip="Goto Previous Quickmark">
+         </action>
+         <action
+               toolbarPath="quickmarks"
+               id="net.sourceforge.eclipsetools.quickmarks.gotoMark0"
+               hoverIcon="icons/gonext_hover.gif"
+               class="net.sourceforge.eclipsetools.quickmarks.GotoMarkAction"
+               definitionId="net.sourceforge.eclipsetools.quickmarks.gotoMark0Cmd"
+               icon="icons/gonext.gif"
+               helpContextId="net.sourceforge.eclipsetools.quickmarks.ctx_act_gotomark"
+               label="%act.gotomark0.label.ms"
+               menubarPath="navigate/additional"
+               tooltip="Goto Next Quickmark">
+         </action>
+         <action
+               toolbarPath="quickmarks"
+               id="net.sourceforge.eclipsetools.quickmarks.setMark0"
+               hoverIcon="icons/addmark_hover.gif"
+               class="net.sourceforge.eclipsetools.quickmarks.SetMarkAction"
+               definitionId="net.sourceforge.eclipsetools.quickmarks.setMark0Cmd"
+               icon="icons/addmark.gif"
+               helpContextId="net.sourceforge.eclipsetools.quickmarks.ctx_act_setmark"
+               label="%act.setmark0.label.ms"
+               menubarPath="navigate/additional"
+               tooltip="Set/Delete a Quickmark">
+         </action>
+      </actionSet>
+   </extension>
+   <extension
+         id="quickmark"
+         name="Quickmark"
+         point="org.eclipse.core.resources.markers">
+      <super
+            type="org.eclipse.core.resources.problemmarker">
+      </super>
+      <super
+            type="org.eclipse.core.resources.bookmark">
+      </super>
+      <persistent
+            value="true">
+      </persistent>
+      <attribute
+            name="number">
+      </attribute>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.ui.resourcePerspective">
+         <actionSet
+               id="net.sourceforge.eclipsetools.quickmarks.actionSet">
+         </actionSet>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            name="Quickmarks"
+            category="org.eclipse.ui.preferencePages.Workbench"
+            class="net.sourceforge.eclipsetools.quickmarks.MarkPreferencePage"
+            id="net.sourceforge.eclipsetools.quickmarks.MarkPreferencePage">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            name="%cmd.gotomark0.name.ms"
+            description="%cmd.gotomark0.description.ms"
+            category="org.eclipse.ui.category.navigate"
+            id="net.sourceforge.eclipsetools.quickmarks.gotoMark0Cmd">
+      </command>
+      <keyBinding
+            string="Ctrl+F12"
+            scope="org.eclipse.ui.globalScope"
+            command="net.sourceforge.eclipsetools.quickmarks.gotoMark0Cmd"
+            configuration="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </keyBinding>
+      <command
+            name="%cmd.gotomark100.name.ms"
+            description="%cmd.gotomark100.description.ms"
+            category="org.eclipse.ui.category.navigate"
+            id="net.sourceforge.eclipsetools.quickmarks.gotoMark100Cmd">
+      </command>
+      <keyBinding
+            string="Shift+F12"
+            scope="org.eclipse.ui.globalScope"
+            command="net.sourceforge.eclipsetools.quickmarks.gotoMark100Cmd"
+            configuration="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </keyBinding>
+      <command
+            name="%cmd.setmark0.name.ms"
+            description="%cmd.setmark0.description.ms"
+            category="org.eclipse.ui.category.navigate"
+            id="net.sourceforge.eclipsetools.quickmarks.setMark0Cmd">
+      </command>
+      <keyBinding
+            string="Shift+Ctrl+F12"
+            scope="org.eclipse.ui.globalScope"
+            command="net.sourceforge.eclipsetools.quickmarks.setMark0Cmd"
+            configuration="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </keyBinding>
+   </extension>
+   <extension
+         point="org.eclipse.ui.markerImageProviders">
+      <imageprovider
+            markertype="net.sourceforge.eclipsetools.quickmarks.quickmark"
+            icon="icons/quickmark.png"
+            id="net.sourceforge.eclipsetools.quickmarks.imageprovider">
+      </imageprovider>
+   </extension>
+   <extension
+         point="org.eclipse.help.toc">
+      <toc
+            file="toc.xml"
+            primary="true">
+      </toc>
+   </extension>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts
+            file="contexts.xml">
+      </contexts>
+   </extension>
+
+</plugin>

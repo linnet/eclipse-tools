@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<document>
+   <properties>
+      <author email="linnet@nospam.users.sourceforge.net">Jesper Kamstrup Linnet</author>
+
+      <title>Implementors feature</title>
+   </properties>
+
+   <body>
+      <section name="Implementors feature">
+         <p>The Implementors plugins add the possibility to jump to the implementation of of an interface. Alternatively,
+         you can jump to the interface of an implementation.</p>
+         <p>The jumping to implementation/interface works for plain Java files. In addition, when associating EJB
+         deployment descriptors with a project, the plugin is made aware of the connection between the EJB interfaces
+         and the implementation class, something which is not specified in the implementation class itself.</p>
+		 
+		 <p>Latest version for Eclipse 2.1.x or Eclipse 3.0.x: <b>v0.0.14</b></p>
+		 <p>Latest version for Eclipse 3.1 M4+: <b>v0.0.15</b></p>
+		 <p>See <a href="changes-report.html">changes</a> or
+         <a href="download.html">download</a>.</p>
+      </section>
+   </body>
+</document>
+

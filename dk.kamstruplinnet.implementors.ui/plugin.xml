@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+   id="dk.kamstruplinnet.implementors.ui"
+   name="%pluginName"
+   version="0.0.17"
+   provider-name="%providerName"
+   class="dk.kamstruplinnet.implementors.ui.ImplementorsUI">
+
+   <runtime>
+      <library name="implementors-ui.jar">
+         <export name="*"/>
+         <packages prefixes="dk.kamstruplinnet.implementors.ui"/>
+      </library>
+   </runtime>
+
+   <requires>
+      <import plugin="org.eclipse.core.resources" version="3.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.jdt.core"/>
+      <import plugin="org.eclipse.jdt.ui"/>
+      <import plugin="dk.kamstruplinnet.implementors.core" export="true"/>
+      <import plugin="org.eclipse.jface"/>
+      <import plugin="org.eclipse.ui.ide" optional="true" version="3.0.0"/>
+      <import plugin="org.eclipse.ui.editors"/>
+      <import plugin="org.eclipse.ui.workbench.texteditor"/>
+      <import plugin="org.eclipse.jface.text"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.runtime.compatibility" optional="true" version="3.0.0"/>
+   </requires>
+
+   <extension
+         point="org.eclipse.ui.editorActions">
+      <editorContribution
+            targetID="org.eclipse.jdt.ui.CompilationUnitEditor"
+            id="dk.kamstruplinnet.implementors.ui.goto.implementor">
+         <action
+               definitionId="dk.kamstruplinnet.implementors.ui.goto.implementor.action.key"
+               label="%implementorAction.label"
+               class="dk.kamstruplinnet.implementors.ui.actions.GotoImplementorEditorActionDelegate"
+               id="dk.kamstruplinnet.implementors.ui.goto.implementor.action">
+         </action>
+      </editorContribution>
+      <editorContribution
+            targetID="org.eclipse.jdt.ui.CompilationUnitEditor"
+            id="dk.kamstruplinnet.implementors.ui.goto.interface">
+         <action
+               definitionId="dk.kamstruplinnet.implementors.ui.goto.interface.action.key"
+               label="%interfaceAction.label"
+               class="dk.kamstruplinnet.implementors.ui.actions.GotoInterfaceEditorActionDelegate"
+               id="dk.kamstruplinnet.implementors.ui.goto.interface.action">
+         </action>
+      </editorContribution>
+      <editorContribution
+            targetID="org.eclipse.jdt.ui.ClassFileEditor"
+            id="dk.kamstruplinnet.implementors.ui.goto.implementor_cf">
+         <action
+               definitionId="dk.kamstruplinnet.implementors.ui.goto.implementor.action.key"
+               label="%implementorAction.label"
+               class="dk.kamstruplinnet.implementors.ui.actions.GotoImplementorEditorActionDelegate"
+               id="dk.kamstruplinnet.implementors.ui.goto.implementor.action_cf">
+         </action>
+      </editorContribution>
+      <editorContribution
+            targetID="org.eclipse.jdt.ui.ClassFileEditor"
+            id="dk.kamstruplinnet.implementors.ui.goto.interface_cf">
+         <action
+               definitionId="dk.kamstruplinnet.implementors.ui.goto.interface.action.key"
+               label="%interfaceAction.label"
+               class="dk.kamstruplinnet.implementors.ui.actions.GotoInterfaceEditorActionDelegate"
+               id="dk.kamstruplinnet.implementors.ui.goto.interface.action_cf">
+         </action>
+      </editorContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <viewerContribution
+            targetID="#CompilationUnitEditorContext"
+            id="dk.kamstruplinnet.implementors.ui.popup.editor">
+         <action
+               label="%implementorAction.label"
+               class="dk.kamstruplinnet.implementors.ui.actions.GotoImplementorEditorActionDelegate"
+               menubarPath="group.open"
+               id="dk.kamstruplinnet.implementors.ui.goto.implementor.action">
+         </action>
+         <action
+               label="%interfaceAction.label"
+               class="dk.kamstruplinnet.implementors.ui.actions.GotoInterfaceEditorActionDelegate"
+               menubarPath="group.open"
+               id="dk.kamstruplinnet.implementors.ui.goto.interface.action">
+         </action>
+      </viewerContribution>
+      <viewerContribution
+            targetID="#ClassFileEditorContext"
+            id="dk.kamstruplinnet.implementors.ui.popup.editor_cf">
+         <action
+               label="%implementorAction.label"
+               class="dk.kamstruplinnet.implementors.ui.actions.GotoImplementorEditorActionDelegate"
+               menubarPath="group.open"
+               id="dk.kamstruplinnet.implementors.ui.goto.implementor.action_cf">
+         </action>
+         <action
+               label="%interfaceAction.label"
+               class="dk.kamstruplinnet.implementors.ui.actions.GotoInterfaceEditorActionDelegate"
+               menubarPath="group.open"
+               id="dk.kamstruplinnet.implementors.ui.goto.interface.action_cf">
+         </action>
+      </viewerContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            name="%implementorAction.name"
+            description="%implementorAction.description"
+            category="org.eclipse.ui.category.navigate"
+            id="dk.kamstruplinnet.implementors.ui.goto.implementor.action.key">
+      </command>
+      <command
+            name="%interfaceAction.name"
+            description="%interfaceAction.description"
+            category="org.eclipse.ui.category.navigate"
+            id="dk.kamstruplinnet.implementors.ui.goto.interface.action.key">
+      </command>
+      <keyBinding
+            string="Alt+F3"
+            scope="org.eclipse.jdt.ui.javaEditorScope"
+            command="dk.kamstruplinnet.implementors.ui.goto.implementor.action.key"
+            configuration="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </keyBinding>
+      <keyBinding
+            string="Ctrl+Alt+F3"
+            scope="org.eclipse.jdt.ui.javaEditorScope"
+            command="dk.kamstruplinnet.implementors.ui.goto.interface.action.key"
+            configuration="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </keyBinding>
+   </extension>
+
+</plugin>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project>
+   <pomVersion>3</pomVersion>
+
+   <id>call-hierarchy</id>
+
+   <name>Call Hierarchy plugin</name>
+
+   <currentVersion>0.6.0</currentVersion>
+
+   <organization>
+      <name>Jesper Kamstrup Linnet</name>
+
+      <url>http://sourceforge.net/projects/eclipse-tools/</url>
+
+      <logo>http://sourceforge.net/sflogo.php?group_id=1&amp;type=5</logo>
+   </organization>
+
+   <inceptionYear>2003</inceptionYear>
+
+   <package>dk.kamstruplinnet.callers</package>
+
+   <description>The Call Hierarchy plugin is an Eclipse view for showing calls to or calls from a method.</description>
+
+   <shortDescription>The Call Hierarchy plugin is an Eclipse view for showing calls to or calls from a method.</shortDescription>
+
+   <url>http://eclipse-tools.sourceforge.net</url>
+
+   <siteAddress>eclipse-tools.sourceforge.net</siteAddress>
+
+   <siteDirectory>/home/groups/e/ec/eclipse-tools/htdocs/</siteDirectory>
+
+   <distributionDirectory>/home/groups/e/ec/eclipse-tools/htdocs/${pom.id}/distributions/</distributionDirectory>
+
+   <repository>
+      <connection>scm:cvs:pserver:jl@localhost:c:/data/cvsroot:dk.kamstruplinnet.callers</connection>
+
+<!--      <url>http://cvs.apache.org/viewcvs/jakarta-turbine-maven/</url> -->
+   </repository>
+
+<!--  <repository>
+      <connection>scm:cvs:pserver:anoncvs@cvs.apache.org:/data/cvsroot:MockEJB</connection>
+      <url>http://cvs.apache.org/viewcvs/jakarta-turbine-maven/</url>
+  </repository> -->
+   <versions>
+      <version>
+         <id>0.5.1</id>
+
+         <name>0.5.1</name>
+
+         <tag>v0_5_1</tag>
+      </version>
+      <version>
+         <id>0.4.1</id>
+
+         <name>0.4.1</name>
+
+         <tag>v0_4_1</tag>
+      </version>
+
+      <version>
+         <id>0.4.0</id>
+
+         <name>0.4.0</name>
+
+         <tag>v0_4_0</tag>
+      </version>
+
+      <version>
+         <id>0.3.1</id>
+
+         <name>0.3.1</name>
+
+         <tag>v0_3_1</tag>
+      </version>
+
+      <version>
+         <id>0.3.0</id>
+
+         <name>0.3.0</name>
+
+         <tag>v0_3_0</tag>
+      </version>
+
+      <version>
+         <id>0.2.0</id>
+
+         <name>0.2.0</name>
+
+         <tag>v0_2_0</tag>
+      </version>
+   </versions>
+
+   <branches>
+   </branches>
+
+   <developers>
+      <developer>
+         <name>Jesper Kamstrup Linnet</name>
+
+         <id>linnet</id>
+
+         <email>linnet@nospam.users.sourceforge.net</email>
+
+         <organization>
+         </organization>
+
+         <roles>
+            <role>Developer</role>
+         </roles>
+      </developer>
+   </developers>
+
+<!-- Need to mark these as compile-time/run-time -->
+   <dependencies>
+      <dependency>
+         <id>workbenchwin</id>
+
+         <version>2.1.0</version>
+      </dependency>
+
+      <dependency>
+         <id>jfacetext</id>
+
+         <version>2.1.0</version>
+      </dependency>
+
+      <dependency>
+         <id>workbench</id>
+
+         <version>2.1.0</version>
+      </dependency>
+
+      <dependency>
+         <id>swt</id>
+
+         <version>2.1.0</version>
+      </dependency>
+
+      <dependency>
+         <id>runtime</id>
+
+         <version>2.1.0</version>
+      </dependency>
+
+<!--
+      <dependency>
+         <id>workbench2</id>
+
+         <version>2.1.0</version>
+      </dependency>
+-->
+      <dependency>
+         <id>platform-ui</id>
+
+         <version>2.1.0</version>
+      </dependency>
+
+      <dependency>
+         <id>jface</id>
+
+         <version>2.1.0</version>
+      </dependency>
+<!--
+      <dependency>
+         <id>resources-win32</id>
+
+         <version>2.1.0</version>
+      </dependency>
+-->
+      <dependency>
+         <id>texteditor</id>
+
+         <version>2.1.0</version>
+      </dependency>
+
+      <dependency>
+         <id>jdt-ui</id>
+
+         <version>2.1.0</version>
+      </dependency>
+
+      <dependency>
+         <id>views</id>
+
+         <version>2.1.0</version>
+      </dependency>
+
+      <dependency>
+         <id>boot</id>
+
+         <version>2.1.0</version>
+      </dependency>
+
+      <dependency>
+         <id>resources</id>
+
+         <version>2.1.0</version>
+      </dependency>
+<!--
+      <dependency>
+         <id>swt-win32</id>
+
+         <version>2.1.0</version>
+      </dependency>
+-->
+      <dependency>
+         <id>editors</id>
+
+         <version>2.1.0</version>
+      </dependency>
+
+      <dependency>
+         <id>text</id>
+
+         <version>2.1.0</version>
+      </dependency>
+
+      <dependency>
+         <id>jdt-core</id>
+
+         <version>2.1.0</version>
+      </dependency>
+
+<!--../../plugins/org.eclipse.core.resources_2.1.0/bin-->
+<!--../../plugins/org.eclipse.swt_2.1.0/bin-->
+<!--../../plugins/org.eclipse.core.runtime_2.1.0/bin-->
+<!--../../plugins/org.eclipse.ui.workbench.texteditor_2.1.0/bin-->
+<!--../../plugins/org.eclipse.ui_2.1.0/bin-->
+<!--../../plugins/org.eclipse.ui.editors_2.1.0/bin-->
+<!--../../plugins/org.eclipse.jface.text_2.1.0/bin-->
+<!--../../plugins/org.eclipse.ui.views_2.1.0/bin-->
+<!--../../plugins/org.eclipse.core.boot_2.1.0/bin-->
+<!--../../plugins/org.eclipse.text_2.1.0/bin-->
+<!--../../plugins/org.eclipse.jface_2.1.0/bin-->
+<!--../../plugins/org.eclipse.ui.workbench_2.1.0/bin-->
+<!--../../plugins/org.eclipse.jdt.ui_2.1.0/bin-->
+<!--../../plugins/org.eclipse.jdt.core_2.1.0/bin-->
+<!--
+    <dependency>
+      <id>junit</id>
+      <version>3.8.1</version>
+      <type>test</type>
+      <url>http://junit.org/</url>
+    </dependency>
+-->
+   </dependencies>
+
+   <build>
+      <nagEmailAddress>linnet@nospam.users.sourceforge.net</nagEmailAddress>
+
+      <sourceDirectory>src</sourceDirectory>
+
+      <unitTestSourceDirectory>test</unitTestSourceDirectory>
+
+      <integrationUnitTestSourceDirectory />
+
+      <aspectSourceDirectory>
+      </aspectSourceDirectory>
+
+<!-- Unit test classes -->
+      <unitTest>
+         <includes>
+            <include>**/*Test.java</include>
+         </includes>
+      </unitTest>
+
+<!-- J A R  R E S O U R C E S -->
+<!-- Resources that are packaged up inside the JAR file -->
+      <resources>
+         <includes>
+            <include>log4j.properties</include>
+         </includes>
+      </resources>
+   </build>
+</project>
+

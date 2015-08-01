@@ -1,0 +1,344 @@
+<!-- $Header: /cvsroot/eclipse-tools/net.sourceforge.eclipsetools.quickmarks/html/reference/preference.html,v 1.2 2004/07/18 02:42:02 deerwood Exp $ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<title>Quickmarks Plugin: Preference options</title>
+	<link href="../doc.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+	<h1 class="head">Quickmarks Plugin: Preference options</h1>
+	<p>There are several options for the Quickmarks.</p>
+	<table width="421" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td>
+				<img src="../img/options_top.gif" width="421" height="87" alt="" /></td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#scope">
+					<img src="../img/options_scope.gif" width="421" height="111" border="0" title="jump to Scope description" alt="" /></a></td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#multiple">
+					<img src="../img/options_multiple.gif" width="421" height="109" border="0" title="jump to Multiple mark description" alt="" /></a></td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#selection">
+					<img src="../img/options_selection.gif" width="421" height="110" border="0" title="jump to Selection description" alt="" /></a></td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#delete">
+					<img src="../img/options_delete.gif" width="421" height="67" border="0" title="jump to Delete description" alt="" /></a></td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#pattern">
+					<img src="../img/options_pattern.gif" width="421" height="51" border="0" title="jump to Name pattern description" alt="" /></a></td>
+		</tr>
+		<tr>
+			<td>
+				<img src="../img/options_bottom.gif" width="421" height="95" alt="" /></td>
+		</tr>
+	</table>
+
+	<a id="scope" name="scope"></a>
+	<h2>1. Have one set of Quickmarks per:</h2>
+	<p>Instead of having one set of Quickmarks per Workspace (default) you 
+		might prefer to have one set per Project, per Folder or even per 
+		Document. With scope Workspace or Project the set of Quickmarks spreads 
+		over the whole scope tree including any subfolders. A Quickmark is 
+		found (and potentially moved) even if it is present deep inside some 
+		folder hierarchy (by recursively looking for it). With scope Document 
+		there is no recursion naturally.</p>
+	<p>With the Folder setting your scope is more limited than you might 
+		expect: only Quickmarks existing in direct child documents of the 
+		current folder are considered as belonging to the set. If the search 
+		for Quickmarks would recurse into subfolders here too then you would 
+		end up with an inconsistency: as soon as you would jump to a Quickmark 
+		inside some subfolder document the scope would change silently to that 
+		subfolder, even if you started near the top. One consequence would be, 
+		that setting a Quickmark in some top folder would potentially remove 
+		multiple Quickmarks in several subfolder documents, whereas setting a 
+		Quickmark deep in the hierarchy would ignore any same numbered 
+		Quickmark in sibling or parent folders.</p>
+	<p>Besides, changing the scope setting does not delete any existing 
+		Quickmarks. The task and bookmarks view continue to show them all and 
+		you can thus navigate to all existing ones via the views. But the 
+		keyboard navigation will only look for Quickmarks in the choosen scope, 
+		derived from the active editor.</p>
+	<p>Note that widening the scope e.g. from Document to Workspace may leave 
+		you with multiple Quickmarks having the same number. See next option 
+		for details on how this plugin deals with duplicate Quickmarks.</p>
+	<p>With no editor open at all and a scope narrower than workspace, there is 
+		no indication which target scope to use. If you try to jump to a 
+		duplicate Quickmark then, the plugin falls back to choose the very 
+		first Quickmark from the workspace with that number. After an editor is 
+		opened, the target to use is determined from the active editor and 
+		jumping is restricted to that project, folder or document. Better you 
+		open some document in the scope of interest and then jump. Unique 
+		Quickmarks in the workspace on the other hand are found easily and the 
+		target scope then is known correctly.</p>
+
+	<a id="multiple" name="multiple"></a>
+	<h2>2. Allow multiple marks with the same number? What to do when a new one 
+		is set:</h2>
+	<p>As told for the previous option you might have multiple Quickmarks with 
+		the same number when you widen the scope. Another situation with 
+		multiple Quickmarks may arise even with the default Workspace scope 
+		when you close a project with Quickmarks set in some documents of that 
+		project.</p>
+	<p>Closing a project does not remove the Quickmarks, but makes them 
+		inaccessible the same way as all resources of that project, as long as 
+		the project remains closed. Task view and Bookmarks view don't show the 
+		marks of the closed project either, the same way as they don't show 
+		other annotations of closed projects.</p>
+	<p>When you now set new Quickmarks somewhere else, then reopen the closed 
+		project again, you may get duplicates too.</p>
+	<p>If you get duplicates this way or by widening the scope (both considered 
+		to exist by accident) what to do, when setting a new one with the same 
+		number somewhere else? You have the choice of removing all of the 
+		existing duplicates when you set a new one.</p>
+	<p><img src="../img/sl_setmark1del3.gif" alt="" 
+			title="adding a Quickmark and deleting multiple existing ones"/></p>
+	<p>Or you can let the plugin handle this case specially by adding another 
+		dup for already duplicated marks instead, so that you not loose 
+		accidentally several important positions, potentially spread all over 
+		the place (default).</p>
+	<p><img src="../img/sl_setmark1to2.gif" alt="" 
+			title="adding a Quickmark to multiple existing ones"/></p>
+	<p>Another option is to let the plugin ask, what to do with existing
+		duplicates. Here you can additionally cancel the set Quickmark action
+		by pressing the cancel button or <em class="Key">ESC</em> on the keyboard.</p>
+	<p><img src="../img/dialog_ask.gif" alt="" 
+			title="ask back dialog"/></p>
+	<p>Finally you may prefer to have multiple Quickmarks with the same number 
+		regularily and work with dups all the time, deleting them only 
+		explicitely. An extreme case of this would be to turn the plugin from 
+		'B company Style' into 'M company Style'. See <a href="styles.html">How 
+		to switch styles</a>.</p>
+	<p>This plugin handles moving to duplicates by cycling through them. From 
+		the current selection the next Quickmark with the wanted number is 
+		jumped to, toggling around to the first one, when the selection is on 
+		or after the last mark. The order of jumping respects the project, path 
+		and file name alphabetically and the remembered selection start and 
+		length inside the document numerically. For Quickmark 0 there is also 
+		an action available to jump to the previous mark, see <a 
+		href="evidence.html#menu">the menu</a>. An appropriate message is shown 
+		in the statusline.</p>
+	<p><img src="../img/sl_gotomark1of2.gif" alt="" 
+			title="cycling through multiple Quickmarks"/></p>
+
+	<a id="selection" name="selection"></a>
+	<h2>3. Decide how the current selection is remembered when setting a 
+		mark:</h2>
+	<p>The Quickmarks remember the current selection completely by default. You 
+		may prefer to let the mark only remember the start of the selection, 
+		move the cursor to start of line or highlight the whole line where the 
+		current selection starts. Note, that even with the latter three options 
+		the selction remains unchanged when setting the mark. Only when you 
+		jump to a mark your preference will be visible.</p>
+	<p><img src="../img/remember_all.gif" alt="" 
+			title="setting a Quickmark or jumping to it with the whole selection remebered"/></p>
+	<p><img src="../img/remember_line.gif" alt="" 
+			title="jumping to a Quickmark with selection remembered to whole line"/></p>
+	<p>Note also, that the current caret position is ignored. The mark is set 
+		where the current selection starts from top. No way around this: 
+		Eclipse does not offer an API to get/set the caret position 
+		programmatically (as far as I could figure).</p>
+
+	<a id="delete" name="delete"></a>
+	<h2>4. When to delete a mark instead of moving it:</h2>
+	<p>By default a Quickmark is removed if the current selection matches the 
+		remembered selection exactly and you then press the key to set a new one 
+		with the same number. This holds true even if you have opted to never 
+		move / always add a Quickmark with the same number. This is easily 
+		achieved by jumping to a Quickmark, which changes the current selection 
+		to the remebered one, then invoking the action to set/delete that mark. 
+		This works always.</p>
+	<p>If the current selection differs even slightly this will be interpreted 
+		as a move request (and in case you have opted to never move a Quickmark 
+		possibly an add request, leaving you with multiple Quickmarks with the 
+		<strong><em>same number</em></strong> on the <strong><em>same 
+		line</em></strong>).</p>
+	<p>But you might prefer to relax this policy so that every selection 
+		starting at the same <strong>line</strong> as an existing Quickmark is 
+		enough to being interpreted as a delete request.</p>
+	<p>Note, that it is always possible to have several Quickmarks with 
+		different numbers starting at the same line. This may make perfect 
+		sense when the marks remember the whole or the start of selection. It 
+		seems pretty useless with the selection remebered to start of line or 
+		whole line. But it might at least be usefull to switch mark numbers. 
+		The overlapping icons to the left of the editor try to indicate the 
+		fact by beeing partly transparent. Look for the small red mark, it has 
+		a different position for every mark number. If you see more than one 
+		red mark there is more then one Quickmark set on that line.</p>
+	<p><img src="../img/twomarks.gif" alt="" 
+			title="2 Quickmarks (no 4 and 8) at the same line"/></p>
+
+	<a id="pattern" name="pattern"></a>
+	<h2>5. Name/pattern of Quickmarks:</h2>
+	<p>The name of a Quickmark is shown by default in task and bookmarks view 
+		in the <strong>Description</strong> column and also when you hover over 
+		the Quickmark decorations left and right to the editor (in most 
+		editors).</p>
+	<p>The Quickmarks are by default named "Quickmark {0}", where "{0}" is 
+		dynamically replaced with the number of the Quickmark (a digit 0-9). 
+		You may change the name of a Quickmark here.</p>
+	<p>The upper field just shows a formatted name sample and isn't 
+		editable.</p>
+	<p>The string entered in the lower field is a full blown MessageFormat 
+		pattern supplied with 12 parameters:</p>
+	<p><img src="../img/pattern_tooltip.gif" alt="" 
+			title="ToolTip of the pattern field"/></p>
+	<p><strong>If you feel stressed already then <a href="#dontpanic">skip the details</a>, the default is OK!</strong></p>
+	<dl>
+		<dt>{0}</dt>
+		<dd>is the number of the Quickmark</dd>
+		<dt>{1}</dt>
+		<dd>is the line number of the Quickmark at the moment it is set</dd>
+		<dt>{2}</dt>
+		<dd>is the character offset into the document of the selection as remembered in the Quickmark at the moment it is set</dd>
+		<dt>{3}</dt>
+		<dd>is the length of the selection as remembered in the Quickmark at the moment it is set</dd>
+		<dt>{4}</dt>
+		<dd>is the name of the document where the Quickmark is set</dd>
+		<dt>{5}</dt>
+		<dd>is the name of the folder where the Quickmark is set</dd>
+		<dt>{6}</dt>
+		<dd>is the path to the document where the Quickmark is set, without the project name</dd>
+		<dt>{7}</dt>
+		<dd>is the name of the project where the Quickmark is set</dd>
+		<dt>{8}</dt>
+		<dd>is the date/time when the Quickmark is set</dd>
+		<dt>{9}</dt>
+		<dd>is the shortened text just before the current selection</dd>
+		<dt>{10}</dt>
+		<dd>is the shortened text of the current selection, first few chars, an elipsis ... and last few chars</dd>
+		<dt>{11}</dt>
+		<dd>is the shortened text just after the current selection</dd>
+	</dl>
+	<p>As indicated all parameters are copied into the generated name as of the 
+		time when the Quickmark is set, they are <strong>never</strong> updated 
+		later automatically. If you want the Quickmark name to be updated after 
+		heavy changes to a document (e.g. renaming the document, moving the 
+		document to another folder, deleting or inserting many lines before the 
+		mark) you must recreate the Quickmark, best done by jumping to it, then
+		pressing the key to delete/set that same mark twice.</p>
+	<p>With no duplicate Quickmarks the default setting is usually informative 
+		enaugh. But when you prefer to work with duplicate Quickmarks often, 
+		the additional parameters might come in handy.</p>
+	<p><strong>Overwhelmed? <a href="#dontpanic">Skip the samples.</a></strong></p>
+
+	<h3>Sample patterns and their results</h3>
+	<p>If, for instance, you regularily close the projects, you are currently 
+		not working on (not deleting the Quickmarks in it before closing, 
+		naturally), then you might prefer to pattern the Quickmarks like<br />
+		<code>"Mark&nbsp;{0}&nbsp;in&nbsp;{7}"</code>, which yields names like<br />
+		<code>&nbsp;&nbsp;"Mark&nbsp;5&nbsp;in&nbsp;org.sourceforge.eclipsetools"</code>.</p>
+	<p>Especially if you <a href="styles.html">switch to M company style</a>, 
+		then the number of the Quickmark will never change (always be 0), 
+		depending on your choosen scope you then might like something similar 
+		to <br />
+		<code>"Quickmark&nbsp;set&nbsp;at&nbsp;line&nbsp;{1}"</code> 
+		or<br />
+		<code>"Mark&nbsp;in&nbsp;''{4}''&nbsp;({1})"</code>, the latter 
+		yielding<br />
+		<code>&nbsp;&nbsp;"Mark&nbsp;in&nbsp;'readme.txt'&nbsp;(42)"</code>.</p>
+	<p>If you prefer, you can have the Quickmark show part of the current 
+		selection. E.g. the pattern<br />
+		<code>"Mark&nbsp;{2}&nbsp;''{9}|{10}|{11}''"</code> will give you<br />
+		<code>&nbsp;&nbsp;"Mark&nbsp;333&nbsp;'before&nbsp;|the&nbsp;selection|&nbsp;and&nbsp;after'"</code>,
+		if you have something selected, or<br />
+		<code>&nbsp;&nbsp;"Mark&nbsp;333&nbsp;'before&nbsp;||and&nbsp;after'"</code> otherwise.<br /> 
+		The <code>{2}</code> here is the offset into the document of the 
+		selection (resolved to 333 in the sample), sometimes a better 
+		distinguisher than the line number.<br /><code>{9}, {10} and 
+		{11}</code> are replaced with the strings yust before, inside and just 
+		after the current selection.<br />The <code>"''"</code> (two 
+		consecutive single quotes) are resolved to just one single quote.<br />
+		And the <code>"|"</code> (vertical bar) stands for itself here.</p>
+	<p>
+		<strong>Do you feel uncomfortable now, finally? <a 
+			href="#dontpanic">DON'T PANIC!</a></strong>
+	</p>
+	<p>The date/time parameter can be formatted to show only one, date or time, 
+		or both. Pattern<br />
+		<code>"{8}"</code> alone shows as<br /> 
+		<code>&nbsp;&nbsp;"07.16.04&nbsp;06:07pm"</code>, pattern<br />
+		<code>"{8,date}"</code> gives<br />
+		<code>&nbsp;&nbsp;"07.16.2004"</code> and<br />
+		<code>"{8,time}"</code> yields<br />
+		<code>&nbsp;&nbsp;"06:12:44pm"</code>.<br />
+		You can also append a format style after <code>"date"</code> or 
+		<code>"time"</code>. The styles are <code>"short"</code>, 
+		<code>"medium"</code>, <code>"long"</code> or <code>"full"</code>. E.g.<br /> 
+		<code>"{8,date,long}"</code> yields<br />
+		<code>&nbsp;&nbsp;"July&nbsp;16,&nbsp;2004"</code>.</p>
+	<p>You even can use the more exotic features of <code>MessageFormat</code>, 
+		e.g.<br /> 
+		<code>"Mark&nbsp;{0}&nbsp;({3,choice,0#caret&#124;0&lt;selection&nbsp;[{3}&nbsp;chars]})"</code> 
+		will yield something like<br />
+		<code>&nbsp;&nbsp;"Mark&nbsp;0&nbsp;(selection&nbsp;[13&nbsp;chars])"</code> or<br />
+		<code>&nbsp;&nbsp;"Mark&nbsp;0&nbsp;(caret)"</code> depending on wether you had 
+		some chars selected when setting the mark or not.</p>
+	<p>Just for completeness a really exotic pattern is this sample:<br />
+		<code>"Mark&nbsp;{0}&nbsp;({3,choice,0#{9}'&#124;'{11}&#124;0&lt;{9}'&#124;'{10}'&#124;'{11}&#124;5&lt;{10}})"</code>.<br />
+		This will yield 3 different Quickmark names, depending on how many chars 
+		where selected when setting the mark:<br />
+		<code>&nbsp;&nbsp;"Mark&nbsp;0&nbsp;(before |and after)"</code> with no chars selected,<br />
+		<code>&nbsp;&nbsp;"Mark&nbsp;0&nbsp;(before |this| and after)"</code> with 1-5 chars selected and <br />
+		<code>&nbsp;&nbsp;"Mark&nbsp;0&nbsp;(the selection)"</code> with more than 5 chars selected.</p>
+	<p>See the JavaDoc of <a 
+		href="http://java.sun.com/j2se/1.4.2/docs/api/java/text/MessageFormat.html"><code>java.text.MessageFormat</code></a> 
+		and <a href="http://java.sun.com/j2se/1.4.2/docs/api/java/text/ChoiceFormat.html"><code>java.text.ChoiceFormat</code></a> 
+		for the gory details of formatting messages.</p>
+
+	<a id="dontpanic" name="dontpanic"></a>
+	<h3>DON'T PANIC! Patterns are easy to use. As well our earth is (nearly) a 
+		sphere and actually exists.<br />Besides, Marvin wouldn't have read the 
+		above samples either, considering them booring.</h3>
+	<p> To guide you while typing the pattern in the lower field, the upper 
+		sample field shows the formatted mark name corresponding to your 
+		pattern as if you were setting a Quickmark 0 at line 42 in an imaginary 
+		document <code>org.eclipse.example/src/doc/readme.txt</code> where 
+		<code>org.eclipse.example</code> is the project name. The imaginary 
+		selection is at character offset 333, has an imaginary length of 13 and 
+		the before/inside/after text is<br /> <code>"before /the selection/ and 
+		after"</code>.</p>
+	<p><img src="../img/pattern_ok.gif" alt="" 
+			title="Preview of name after formatting with the pattern"/></p>
+	<p>If you enter invalid patterns the problem is shown and the buttons 
+		'Apply' and 'OK' are disabled until the pattern is valid again. The 
+		most often reason for an invalid pattern is the unaware usage of single 
+		quotes and unmatched curly braces. If in doubt then stick with the 
+		simple usage of parameters in the form {#} and use double quotes 
+		instead of single quotes.</p>
+	<p><img src="../img/pattern_invalid.gif" alt="" 
+			title="an invalid pattern flagged"/></p>
+	<p>Remeber that you may rename a Quickmark via some of the views. This will 
+		NOT change the Quickmark into a normal mark, it remains to be a 
+		Quickmark and is still considered as a candidate for jumping and beeing 
+		automatically deleted as any other Quickmark.</p>
+	<p>So, don't add important comments via any view for a Quickmark! Consider 
+		adding a normal bookmark or a task at that location instead.</p>
+	<p>See:</p>
+	<ul>
+		<li><a href="../what_it_does.html">What it does</a></li>
+		<li><a href="../how_to_use.html">How to use it</a></li>
+		<li>Reference
+			<ul>
+				<li><a href="evidence.html">Evidence in the user interface</a></li>
+				<li><strong>Preference options</strong></li>
+				<li><a href="visibility.html">Changing visibility in views</a></li>
+				<li><a href="styles.html">Switching to another style</a></li>
+			</ul>
+		</li>		
+	</ul>
+</body>
+</html>
+<!--EOF-->

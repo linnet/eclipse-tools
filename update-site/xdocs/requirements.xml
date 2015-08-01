@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<document>
+   <properties>
+      <author email="linnet@nospam.users.sourceforge.net">Jesper Kamstrup Linnet</author>
+
+      <title>Requirements</title>
+   </properties>
+
+   <body>
+      <section name="Requirements">
+         <p>The plugins have different requirements. See the individual plugin requirements.
+         None of them work on Eclipse 2.0.x.</p>
+      </section>
+   </body>
+</document>
+

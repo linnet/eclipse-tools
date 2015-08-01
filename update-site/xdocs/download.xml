@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<document>
+   <properties>
+      <author email="linnet@nospam.users.sourceforge.net">Jesper Kamstrup Linnet</author>
+
+      <title>Download</title>
+   </properties>
+
+   <body>
+      <section name="Download">
+         <p>The plugins may be downloaded 
+         <a href="http://sourceforge.net/project/showfiles.php?group_id=72684">here</a>
+         </p>
+         <p>Alternatively, use the Eclipse update site at: <b>http://eclipse-tools.sourceforge.net/updates/</b></p>
+      </section>
+   </body>
+</document>
+

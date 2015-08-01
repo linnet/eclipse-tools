@@ -1,0 +1,160 @@
+<!-- $Header: /cvsroot/eclipse-tools/net.sourceforge.eclipsetools.quickmarks/readme.html,v 1.2 2004/07/16 22:16:01 deerwood Exp $ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<title>Quickmarks Plugin (Both Styles)</title>
+	<link href="html/doc.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+	<h1 class="head">Quickmarks Plugin (Both Styles)</h1>
+	<p>This extension enables you to set, move, delete and jump to text markers 
+		by one key stroke only, without having to fill in dialog fields.</p>
+	<p>As delivered this plugin behaves similar to "B" company style, 
+		where the keys 0-9 together with some modifier keys are used to 
+		set/move/delete or jump to a mark with that number, switching/opening 
+		editors, if neccessary.</p>
+	<p>The key binding for this style is well known: <em 
+		class="Key">Shift+Ctrl+#</em> sets/moves/deletes a mark with the 
+		number&nbsp;# and <em class="Key">Ctrl+#</em> jumps to it (where '#' 
+		stands for one of the keys/integers 0-9).</p>
+	<p>As especially <em class="Key">Ctrl+1</em> is by default bound to the 
+		<strong>most important</strong> JavaEditor "Quick Fix" command, we 
+		decided to rebind the "Go to Quickmark" actions to <em 
+		class="Key">Alt+#</em> (purists might want to look at <a 
+		href="html/reference/styles.html#purist">How to have default 
+		"B" company key bindings</a>).</p>
+	<p>As you might guess from the plugins name, you can change it to behave 
+		similar to "M" company style. With this style there are only 3 key 
+		bindings for the actions used, you can have multiple marks too, even 
+		more than 10. But they are not targetable directly, jumping to them 
+		happens by toggling through all existing ones. Jumping around is 
+		restricted to the current document also, so there is no editor 
+		switching/opening (though mine is lon... errmhh, this plugin can do 
+		different and better) and a "move" of a mark is missing too.</p>
+	<p>The key bindings for that style are also well known: <em 
+		class="Key">Ctrl+F2</em> sets/deletes a Quickmark, <em 
+		class="Key">F2</em> jumps to the <em>next</em> Quickmark and <em 
+		class="Key">Shift+F2</em> jumps to the <em>previous</em> Quickmark.</p>
+	<p>2 of these 3 key bindings are used by Eclipse 2.1 already, so we suggest 
+		(and defaulted to) another binding: <em class="Key">Shift+Ctrl+F12</em> 
+		to <strong>set</strong> a Quickmark, <em class="Key">Ctrl+F12</em> to 
+		jump to the <strong>next</strong> and <em class="Key">Shift+F12</em> to 
+		jump to the <strong>previous</strong> Quickmark. In our installations 
+		(with several other extensions installed) these bindings are unused 
+		(<em class="Key">F12</em> <em>is</em> used in Standard and Emacs 
+		configuration).</p>
+	<p>If you prefer this style be sure to read <a 
+		href="reference/styles.html">switching styles</a> to get it whitout 
+		having to re/unbind 21 keys manually.</p>
+	<p>But note, that this plugin easily <em>combines</em> both styles, to give 
+		you the best of both worlds. Read the docs, especially <a 
+		href="html/reference/preference.html">have a look at the plugins 
+		preference page</a> to learn, what this plugin can do for you.</p>
+
+	<h2>How to get it</h2>
+	<p>You probably have done this already, but if not, you can download the 
+		plugin at:</p>
+	<p>&nbsp;&nbsp;<a 
+		href="http://eclipse-tools.sourceforge.net/quickmarks/">http://eclipse-tools.sourceforge.net/quickmarks/</a> 
+		</p>
+	<p>as a ZIP file.</p>
+
+	<h2>How to install it</h2>
+	<ul>
+		<li>Stop Eclipse, if it is running.</li>
+		<li>Remove any previous installation of 
+			net.sourceforge.eclipsetools.quickmarks (and, just in case, any 
+			de.re.quickmarks* and also any dk.kampstruplinnet.quickmarks*).</li>
+		<li>Copy the ZIP parallel to your Eclipse folder (e.g. if your Eclipse 
+			is installed at C:\eclipse then copy the zip to 
+			C:\net.sourceforge.eclipsetools.quickmarks_1.x.x.zip) and unzip it. 
+			It will install to the correct locations 
+			(&lt;ECLIPSE&gt;/plugins/net.sourceforge.eclipsetools.quickmarks_1.x.x) and
+			(&lt;ECLIPSE&gt;/features/net.sourceforge.eclipsetools.quickmarks_1.x.x).</li>
+		<li>Remove the ZIP.</li>
+		<li>Restart Eclipse.</li>
+		<li>Customize all of your perspectives that should have the Quickmarks 
+			enabled and check 'Other >> Quickmarks Both Styles' (the Quickmarks 
+			are available automatically in all perspectives not yet 
+			customized).</li>
+	</ul>
+	<h2>Documentation</h2>
+	<p>The Quickmarks are well documented at runtime of Eclipse, including 
+		context sensitive help, where appropriate.</p>
+	<p><a href="html/how_to_use.html">Preview/see the runtime docs!</a></p>
+
+	<h2>Known Bugs and Problems</h2>
+	<p>none with this plugin yet, but:</p>
+	<ul>
+		<li>there are several Editors where marks ain't settable at all. Namely 
+			the PDE multi page editor for <code>plugin.xml</code>, even in it's 
+			"Source" sub page does not allow marks to be set, though it appears 
+			to look like a full blown editor and is read/write. Same with the 
+			<code>build.properties</code> editor. Another evidence is the read 
+			only editor you open by jumping to the definition of some 
+			class/instance/method ending up in a class file. And another common 
+			case is an editor opened from within the "Plug-ins" view, usually 
+			ending up in the source of something packed inside some JAR, not 
+			editable and not markable too. It's a pitty, marks of any flavour 
+			would make life easier there too, but Eclipse doesn't allow them 
+			there. So the Quickmarks plugin falls back to just message the fact 
+			to you in the statusline.</li>
+		<li>deleting/cutting text blocks with a (Quick)mark in it behaves 
+			somewhat strange: if the mark is at the very beginning of the 
+			block, the mark remains at the current line, but now marks 
+			irrelevant content. If the mark is somewhere in the middle of the 
+			block the mark disappears completely, which is OK when deleting, 
+			but I expected the mark to reappear on a paste or undo operation. I 
+			don't think, this is my fault, it happens with standard bookmarks 
+			too.</li>
+	</ul>
+
+	<h2>Acknowledgments</h2>
+
+	<p>This plugin was based heavily on the work of Jesper Kamstrup Linnet, who 
+		released a simpler plugin for Eclipse 3.x. See also <a 
+		href="http://eclipse-tools.sourceforge.net/quickmarks/">http://eclipse-tools.sourceforge.net/quickmarks/</a>.</p>
+
+	<p>I used much of Jespers ideas, style and code. My addition, driven by the 
+		fact, that duplicate Quickmarks can occur when closing/reopening 
+		Eclipse projects, mainly constitutes in the addition of the Quickmarks 
+		preference page and the smart handling of duplicate Quickmarks. The 
+		option to have different selections remembered in the marks comes from 
+		my old implementation of a "M" company style Quickmarks plugin, never 
+		really published. The idea to have this plugin resemble best of both 
+		worlds came while implementing and testing this variant.</p>
+
+	<p>So this is an extension to Jespers work, intended for 2.1.x, but running 
+		under Eclipse 3.0 too!.</p>
+
+	<h2>Thanks</h2>
+
+	<p>To Jesper, naturally, as noted.</p>
+	<p>After I understood the basics of Eclipse this extension was so easy to 
+		implement, that I have to thank for sure:</p>
+	<ul>
+		<li>the Sun Java team for providing me with this great language</li>
+		<li>all people at Sun <em>documenting</em></li>
+		<li>the Eclipse team for providing me with such a fascinating "for 
+			nothing in particular" platform, all the sample code available to 
+			me, and especially all them, documenting how to use what they 
+			did; and them doing it for others.</li>
+		<li>many contributors for their great code to borrow from and their 
+			docs to read</li>
+	</ul>
+
+	<h2>Author</h2>
+
+	<p>I'm Georg Rehfeld (georg.rehfeld@gmx.de)</p>
+
+	<h2>License</h2>
+
+	<p>As my work is based on Jespers work (and because I like that license) 
+		this plugin is released under the Common Public License - v 1.0 too. 
+		Please see <a 
+		href="http://www.eclipse.org/legal/cpl-v10.html">http://www.eclipse.org/legal/cpl-v10.html</a>.</p>
+</body>
+</html>
+<!--EOF-->

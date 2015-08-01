@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project>
+   <pomVersion>3</pomVersion>
+
+   <id>quickmarks</id>
+
+   <name>Quickmarks plugin</name>
+
+   <currentVersion>3.0.0 and 1.0.11</currentVersion>
+
+   <organization>
+      <name>Jesper Kamstrup Linnet &amp; Georg Rehfeld</name>
+
+      <url>http://sourceforge.net/projects/eclipse-tools/quickmarks</url>
+
+      <logo>http://sourceforge.net/sflogo.php?group_id=1&amp;type=5</logo>
+   </organization>
+
+   <inceptionYear>2004</inceptionYear>
+
+   <package>net.sourceforge.eclipsetools.quickmarks</package>
+
+   <description>This extension enables you to set, move, delete and
+   jump to text markers by one key combination only, without having
+   to fill in dialog fields.
+   The extension can be configured to behave differently via a
+   preference page. It can behave "B company style" (default) or
+   "M company style" or give you the best of both worlds.</description>
+
+   <shortDescription>This plugin adds "quickmarks" (i.e. quick bookmarking) functionality.</shortDescription>
+
+   <url>http://eclipse-tools.sourceforge.net/quickmarks</url>
+
+   <siteAddress>eclipse-tools.sourceforge.net</siteAddress>
+
+   <siteDirectory>/home/groups/e/ec/eclipse-tools/htdocs/</siteDirectory>
+
+   <distributionDirectory>/home/groups/e/ec/eclipse-tools/htdocs/${pom.id}/distributions/</distributionDirectory>
+
+   <versions>
+
+   </versions>
+
+   <branches>
+   </branches>
+
+   <developers>
+      <developer>
+         <name>Jesper Kamstrup Linnet</name>
+
+         <id>linnet</id>
+
+         <email>linnet@nospam.users.sourceforge.net</email>
+
+         <organization>
+         </organization>
+
+         <roles>
+            <role>Developer</role>
+            <role>Admin</role>
+         </roles>
+      </developer>
+      <developer>
+         <name>Georg Rehfeld</name>
+         <id>deerwood</id>
+         <email>deerwood@nospam.users.sourceforge.net</email>
+         <organization></organization>
+         <roles>
+            <role>Developer</role>
+         </roles>
+      </developer>
+   </developers>
+
+   <dependencies/>
+
+   <build>
+      <nagEmailAddress>deerwood@nospam.users.sourceforge.net</nagEmailAddress>
+
+      <sourceDirectory>src</sourceDirectory>
+
+      <unitTestSourceDirectory>test</unitTestSourceDirectory>
+
+      <integrationUnitTestSourceDirectory />
+
+      <aspectSourceDirectory>
+      </aspectSourceDirectory>
+
+<!-- Unit test classes -->
+      <unitTest>
+         <includes>
+            <include>**/*Test.java</include>
+         </includes>
+      </unitTest>
+
+<!-- J A R  R E S O U R C E S -->
+<!-- Resources that are packaged up inside the JAR file -->
+      <resources>
+      </resources>
+   </build>
+   <reports>
+   	  <report>maven-changes-plugin</report>
+   </reports>
+</project>
+

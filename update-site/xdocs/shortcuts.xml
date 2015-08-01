@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<document>
+   <properties>
+      <author email="linnet@nospam.users.sourceforge.net">Jesper Kamstrup Linnet</author>
+
+      <title>Eclipse Keyboard Shortcuts</title>
+   </properties>
+
+   <body>
+      <section name="Eclipse Keyboard Shortcuts">
+         <p>Shortcuts are available for both Eclipse 2.1 and Eclipse 3.0.</p>
+         <subsection name="Eclipse 3.0">
+             <p>Download shortcuts for Eclipse 3.0 <a href="Keyboard_shortcuts_(3.0).pdf">as PDF</a> or <a href="Keyboard_shortcuts_(3.0).sxw">as OpenOffice document</a>.</p>
+             <p>This quick reference is made by me so please send all comments to me (linnet located-at users.sourceforge.net)</p>
+         </subsection>
+         <subsection name="Eclipse 2.1">
+             <p>This is a quick reference to Eclipse keyboard shortcuts. It is based on Eclipse 2.1.</p>
+             <p><a href="KeyBind_Eclipse_v2_1.pdf">Download as PDF.</a></p>
+             <p>Copyright 2003 by Jochen Vogele, media saturn systemzentrale GmbH (Vogele located-at media-saturn.com)</p>
+             <p><b>Please note</b>: I do not have the copyrights to the PDF. However, the author has permitted
+             me to post it on this site.</p>
+         </subsection>
+      </section>
+   </body>
+</document>
+

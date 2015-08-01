@@ -1,0 +1,294 @@
+// $Header: /cvsroot/eclipse-tools/net.sourceforge.eclipsetools.quickmarks/changes.txt,v 1.3 2004/07/18 02:54:11 deerwood Exp $
+
+Release 1.0.11
+-------------
+
+Bug fix release:
+- added checks against the active page or the active file beeing null in
+  Goto/SetMarkAction(). Especially the latter is normal when having a class
+  file loaded in the active editor.
+- Do not use String.replaceAll() any more to make compatible with JDK 1.3.
+- Removed forgotten references to de.re.quickmarks in all plugin.xml variants.
+- Added/changed mnemonics in all dialogs.
+- fixed german tooltip and the corresponding img in the docs
+- added important Eclipse 3 notes to docs
+
+
+Release 1.0.10
+-------------
+
+Main change is the modification of required plugins "match" to "greaterOrEqual",
+which enabled this plugin to be recognized in Eclipse 3.0 "compatibility mode".
+The plugin is, as of now, also released as an Eclipse feature (though I'm
+unsure, if this small plugin is really worth declaring it a feature ... at least
+it comes with it's own preference page and documentation, so let's declare it
+to be a feature then).
+
+Also added 3 more parameters to the quickmark name pattern: the shortened
+strings before, inside and after the current selection.
+
+
+Release 1.0.9
+-------------
+
+Main change is the move from packages de.re.quickmarksb.* to
+net.sourceforge.eclipsetools.quickmarks . All source files are in that package
+now (there is really no need for subpackages). Potential default/package access
+members ain't considered yet, members used for cooperation between classes and
+instances are all public. Fixed a bug, where Folder scope looked recursively
+for the Set of Quickmarks resulting in inconsistent behaviour. Updated docs
+accordingly.
+
+
+Release 1.0.8
+-------------
+
+Main change is the introduction of pattern editing for the generated names of
+Quickmarks, protecting the user from severe errors and guiding him while
+modifying the pattern. Also changed the default key binding for 'go to quickmark'
+to not conflict with Java editors 'QuickFix' (Ctrl+1) binding as suggested by
+Jesper (Alt+0-9 is used now). Other changes are a general code cleanup and
+update of the docs.
+
+folder html and file readme.html:
+- updated docs to follow implementation
+
+folder icons:
+- reworked icons for moving forward/backward
+
+source code in general:
+- finally claimed copyright to us (Jesper and Georg), as the source really no
+  longer contains any IBM supplied code
+- used constants instead of strings/numbers anywhere
+- changed all message output to use parametrized formatted messages
+
+class AbstractMarkAction:
+- added methods getShell() and getDisplay()
+
+class SetMarkAction:
+- introduced quickmark name pattern
+- handled option to ask user what to do with multiple marks
+
+class MarkPreferencePage:
+- added pattern editing for the quickmark name
+- added another option to ask user what to do with multiple marks
+- heavily commented the class
+
+file plugin.xml and associated:
+- used new icons for moving forward/backward
+- changed goto key bindings (Ctrl+# -> Alt+#)
+- added 'pure' B company style plugin.*.bstyle files for convenience
+
+
+Release 1.0.7
+-------------
+
+Main change is the implementation of a reliable sort of Quickmarks by
+looking for project, path and name of the file and charStart and charEnd of
+the Quickmarks. This in turn enabled to have some new features:
+- With duplicated Quickmarks they are now looked up starting from the current
+  selection, resulting in a much more natural/usefull behaviour than before.
+- Could add the feature of jumping to previous Quickmark, one action for
+  Quickmark 1 is added, but the feature is implemented general enough to
+  have this for all Quickmarks.
+- Based on the above it was possible to have true MS style support, if one
+  wants. Another plugin.xml.msstyle is provided to ease switching to that
+  style.
+
+folder html:
+- documented the MS style and changes to the B style
+
+class AbstractMarkAction:
+- changed docs
+- now multiple quickmarks are sorted reliably to enable several new
+  features, especially a true MS style
+
+class GotoMarkAction:
+- added a method to locate the next/previous marker starting search
+  from the current selection (taking advantage of the new reliable sort
+  of quickmarks)
+
+class QuickmarksPlugin:
+- when logging an error the log view is shown
+- could remove some state from this singleton taking advantage of the
+  new reliable sort of quickmarks
+
+file plugin.properties:
+- changed official name of plugin
+- changed descriptions/names for quickmark 1 due to the new 'go to
+  previous' action
+
+files plugin.xml.*:
+- added as defaults for both styles
+
+file plugin.xml:
+- changed official name of plugin
+- added new action to move to previous quickmark 1, taking advantage
+  of the new reliable sort of quickmarks
+
+file readme.html:
+- changed official name of plugin
+- changed release to 1.0.7
+- added description of new MS style
+
+file toc.xml
+- documented the MS style
+- changed main topic to view the readme.html
+
+
+Release 1.0.6
+-------------
+
+Main change is the fix of a glitch, where the task view moved our current
+selection in the active editor sometimes on deletion of a Quickmark. 
+This was the case when the selection in the task view endet up on some marker
+in the same file as actively edited after the Quickmark deletion. The
+implemented solution is to remove the task view selection, if it currently is
+on a marker in the same file as the active one.
+
+class AbstractMarkerAction:
+- added code to fix the glitch of beeing moved somewhere else by the
+  TaskList, when the selection there is on some marker of the same
+  resource then a marker to be deleted
+
+class SetMarkAction:
+- same as above
+
+
+Release 1.0.5
+-------------
+
+Main change is not seen in UI: made use of the image registry in the plugin
+instead of caching status line images ourself.
+
+class QuickmarksPlugin:
+- used the ImageRegistry instead of caching ourself
+
+
+Release 1.0.4
+-------------
+
+Main change is the addition of online help and context sensitive help for the
+actions and the preference page. The readme.txt was replaced by readme.html,
+which makes use of the online help files too, to keep all docs in one place.
+
+directory html:
+- added for online and context sensitive help
+
+class FixMarkAction:
+- removed unused local variable
+
+class MarkPreferencePage:
+- organized imports
+- added help context ids
+- added comments
+
+file contexts.xml:
+- added this file for context sensitive help
+
+file plugin.properties:
+- corrected descriptions in key binding
+
+file plugin.xml:
+- added help context ids for actions
+- added static runtime help extension
+- added context sensitive help extension
+- changed version to 1.0.4
+
+file readme.txt:
+- removed in favour of readme.html
+
+file readme.html:
+- replaced readme.txt with readme.html
+
+file toc.xml:
+- added this file for static online help
+
+
+Release 1.0.3
+-------------
+
+Main change is the fix to show the special Quickmark icons on startup of the
+Eclipse workbench.
+
+class FixMarkAction:
+- newly introduced to fix the initial showup of quickmark icons to be specific
+
+class SetMarkAction:
+- removed redundant FILE attribute from marker (unused and same as
+  the marker resource)
+
+class QuickmarksPlugin:
+- fixed the initial showup of quickmark icons to be specific after a short
+  delay
+- introduced a new class FixMarkAction for the job
+- removed redundant FILE attribute from marker (unused and same as
+  the marker resource)
+
+file plugin.xml:
+- removed redundant FILE attribute from marker (unused and same as
+  the marker resource)
+
+
+Release 1.0.2
+-------------
+
+Main change is the removal of statusline messages after some time.
+
+file readme.txt:
+- documented evidence left/right editor
+
+class AbstractMarkAction:
+- added message clearing via a seperate thread after some time
+  (3 seconds for normal messages, 5 for error messages)
+
+class QuickmarksPlugin:
+- added support for a message id used by the timed clear message feature
+
+
+Release 1.0.1
+-------------
+
+Main changes are cleanup of code and commenting, avoidance of the 'mark near
+EOF' problem and image cleanup.
+
+folder icons:
+- made the icons more transparent and having it's own marker position
+  2 pixel apart (mostly). Now marks with different numbers at the same
+  line are a little bit better distinguishable.
+- changed most GIF icons to PNG24 for better transparency
+
+class AbstractMarkAction:
+- Heavily commented the class.
+- Fixed some places to correctly check for nulls
+- Fixed other places to check for instanceof before casting
+- Changed some methods to return more generic interfaces
+- added an image to the status line message
+
+class SetMarkAction:
+- added check against setting a mark near EOF
+
+class QuickmarksPlugin:
+- localized the preferences name of the Quickmark
+- made all imports specific
+- added most missing comments
+- added support for images to be displayed alongside status line messages
+
+class QuickmarkImageProvider:
+- changed most GIF icons to PNG24 for better transparency
+
+file plugin.xml:
+- added an unspecific (question mark) default icon to the image provider
+
+file readme.txt:
+- added some more description
+- removed the EOF know problem
+- mentioned UI evidence in Workbench->Startup
+
+
+Release 1.0.0
+-------------
+
+initial release
+
+// EOF

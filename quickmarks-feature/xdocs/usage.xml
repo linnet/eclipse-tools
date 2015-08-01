@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<document>
+   <properties>
+      <author email="linnet@nospam.users.sourceforge.net">Jesper Kamstrup Linnet</author>
+      <author email="deerwood@nospam.users.sourceforge.net">Georg Rehfeld</author>
+
+      <title>Usage</title>
+   </properties>
+
+   <body>
+      <section name="Usage">
+         <subsection name="Overall">
+            <ul>
+               <li>Quickmarks are Workspace global by default, but you can 
+                  change that to have one Set of Quickmarks per Project, Folder 
+                  or Document.</li>
+               <li>A Quickmark remembers the current selection completely by 
+                  default, but you can change that to only remember the start 
+                  of the selection or the line of the selection.</li>
+               <li>There are 10 available Quickmarks (0-9). Only one instance 
+                  of each Quickmark number can be set by default, but you can 
+                  have more (by accident or intention).</li>
+               <li>As duplicate Quickmarks (with the same number) <b>can</b> 
+                  exist by accident or intention, the plugin handles jumping to 
+                  the dups by toggling through them. Setting a new, already 
+                  duplicated mark is "fool proof" by default.</li>
+               <li>The Quickmarks are persisted across sessions, enabling you 
+                  to quickly jump to the locations you were at last time.</li>
+               <li>There is a menu for manipulating and jumping to 
+                  Quickmarks.</li>
+               <li>Quickmarks are visible/jumpable to in task and bookmark 
+                  view, but you are able to change that too. But see the notes 
+                  in the feature docs, if you are an Eclipse 3 user!</li>
+               <li>A Quickmark is indicated by an icon with the corresponding 
+                  number in the vertical annotation bar. Again, see the notes 
+                  in the feature docs, if you are an Eclipse 3 user!</li>
+               <li>The Quickmarks description in the views/when hovering is 
+                  good configurable.</li>
+               <li>The plugin comes with detailed and illustrated online 
+                  documentation including context sensitive help.</li>
+               <li>You can even switch to another style ("M" company style, 
+                  always toggling through Quickmarks, unlimited number of 
+                  marks). Or you may have best of both worlds.</li>
+            </ul>
+            <p>Please be sure to have read the "readme.html" and/or the online 
+               docs coming with the plugin.</p>
+         </subsection>
+         
+         <subsection name="Activating the plugin">
+            <p>In order to activate the plugin, you need to enable Window / 
+               Customize Perspective / Other -&gt; Quickmarks Both Styles.</p>
+         </subsection>
+         
+         <subsection name="Setting quickmarks">
+            <p>Quickmarks are set using Ctrl+Shift+[0-9] (the keyboard 
+               shortcuts can be changed in Window / Preferences / Workbench / 
+               Keys -&gt; Navigate.)</p>
+            <p> If a quickmark with the same number already exists, it is moved 
+               to the new location by default (unless there are duplicates 
+               already, then another duplicate is added by default). If the 
+               specific quickmark already exists in the current location, that 
+               quickmark is removed always.</p>
+         </subsection>
+   
+         <subsection name="Jumping to quickmarks">
+            <p>You jump to a quickmark by pressing Alt+[0-9]. If the quickmark 
+               is not in the active file, the corresponding editor is activated 
+               (and the file is loaded if necessary).</p>
+         </subsection>
+         
+         <subsection name="On our todo list">
+            <p>In this order:</p>
+            <ol>
+               <li>Add an undo feature when moving quickmarks (in case 
+                  important positions were lost). Current plan is to have the 
+                  old quickmarks recreated to invisible markers on move of a 
+                  quickmark for some time and have a special 'Quickmark 
+                  History' view to jump to them and then possibly recreate a 
+                  normal quickmark there.</li>
+            </ol>
+         </subsection>
+
+         <subsection name="Things to note">
+            <p>In some editors, you can't set marks at all, including by means 
+               of this plugin. This is particularly in the PDE-related editors 
+               (build.properties editor, plugin.xml editor etc). Other cases 
+               are editors opened via "Jump to Definition" (F3) and presenting 
+               you a class file, or files opened from the "Plug-ins" view. In 
+               the latter cases these editors also appear as read only. 
+               Although in all mentioned cases setting marks would be usefull 
+               too, Eclipse does not offer that functionality. So only an 
+               appropriate message is shown.</p>
+            <p>The versions 1.0.11 and 3.0.2 were implemented mainly by Georg Rehfeld. 
+               Thanks to Jesper for the initial version and all further 
+               support!</p>
+            <p>The plugin/package name has changed from 1.0.1 (formerly 
+               <code>dk.kampstruplinnet.quickmarks</code>) to 1.0.10 (now 
+               <code>net.sourceforge.eclipsetools.quickmarks</code>). So be 
+               sure to remove <code>dk.kampstruplinnet.quickmarks_xxx</code> 
+               plugins when installing this variant to avoid conflicts (does 
+               not apply to Eclipse 2.1, but only Eclipse 3.x).</p>
+         </subsection>
+      </section>
+   </body>
+</document>

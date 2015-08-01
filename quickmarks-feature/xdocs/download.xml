@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<document>
+   <properties>
+      <author email="linnet@nospam.users.sourceforge.net">Jesper Kamstrup Linnet</author>
+      <author email="deerwood@nospam.users.sourceforge.net">Georg Rehfeld</author>
+
+      <title>Download</title>
+   </properties>
+
+   <body>
+      <section name="Download version 3.0.2 (for Eclipse 3.x)">
+         <p>For an Eclipse 2.1.x version, see below.</p>
+         <p>The plugin may be downloaded 
+         <a href="http://sourceforge.net/project/showfiles.php?group_id=72684">here</a>.
+         </p>
+         <p>Alternatively, use the Eclipse update site at: <b>http://eclipse-tools.sourceforge.net/updates/</b></p>
+         <subsection name="Requirements">
+             <p>The plugin requires Eclipse 3.x.
+             It's been tested with Eclipse 3.0.2 and 3.2 on Windows XP.
+             It does <b>NOT</b> work on Eclipse 2.x. See below for a version for Eclipse 2.x.</p>
+         </subsection>
+      </section>
+      <section name="Download version 1.0.11 (for Eclipse 2.1.x)">
+         <p>This version of the plugin may be downloaded 
+         <a href="http://sourceforge.net/project/showfiles.php?group_id=72684">here</a>.
+         </p>
+         <p>For an Eclipse 3.x version, see above.</p>
+         <subsection name="Requirements">
+            <p>This variant is made for Eclipse 2.1. It's been tested with 
+               Eclipse 2.1.3 on Windows XP. It <b>does</b> however work well in 
+               Eclipse 3.x by means of the 'compatibility mode' contained in 
+               Eclipse 3. The things not working as expected in Eclipse 3 can't 
+               even be fixed by a native 3.0 version. See below and the docs 
+               coming with the plugin.</p>
+            <p>In Eclipse 2.1.3 the Quickmarks display easily in more than one 
+               standard view (e.g. task view and bookmarks view) at the same 
+               time. This seems to not work any longer in Eclipse 3. As 
+               delivered the Quickmarks show up correctly only in the 3.x 
+               bookmarks view. The problem view refuses to display them in it's 
+               list, although it does recognize them halfway by 
+               <em>offering</em> Quickmarks to be shown in it's filter 
+               settings.</p>
+         </subsection>
+      </section>
+   </body>
+</document>

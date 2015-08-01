@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<document>
+   <properties>
+      <author email="linnet@nospam.users.sourceforge.net">Jesper Kamstrup Linnet</author>
+
+      <title>Features</title>
+   </properties>
+
+   <body>
+      <section name="Features">
+         <p>
+         This Eclipse feature adds two actions to the Compilation Unit editor (the Java editor):<ul>
+         <li>an Open Implementation action (jumps to the declaration of the implementing
+         method when activated on a method call on a method on an interface. If invoked on an interface 
+         type itself, it jumps to the implementation class.)</li>
+         <li>an Open Interface action (jumps to an interface implemented by the class containing the 
+         selected method where the interface declares the method. If invoked on an class
+         itself, it jumps to the interface type.)</li>
+         </ul>
+         </p>
+      </section>
+   </body>
+</document>
+

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<document>
+   <properties>
+      <author email="linnet@nospam.users.sourceforge.net">Jesper Kamstrup Linnet</author>
+      <author email="deerwood@nospam.users.sourceforge.net">Georg Rehfeld</author>
+
+      <title>Changes</title>
+   </properties>
+
+   <body>
+     <release version="3.0.2" date="2006-08-08">
+       <action dev="linnet" type="update" >
+            Fixed bug 1413468 and bug 1033426.
+       </action>
+     </release>
+     <release version="3.0.0" date="2004-08-10">
+       <action dev="linnet" type="update" >
+            Added the ability to add quickmarks in PDE editors.
+       </action>
+       <action dev="deerwood" type="update" >
+            Updated the plugin to Eclipse 3.0 compatibility.
+       </action>
+     </release>
+     <release version="1.0.11" date="2004-07-21">
+       <action dev="deerwood" type="update" >
+            Bugfix release adressing these problems:
+            <ul>
+               <li>added checks against editors not allowing
+                  marking, e.g. when viewing a class file or opening files
+                  from the Plug-ins view, then marks ain't settable at all (and
+                  produced a NullPointerException in older versions)</li>
+               <li>removed all references to code introduced newly in JDK 1.4,
+                  so that the Quickmarks feature runs under JDK 1.3 too</li>
+               <li>removed some leftover references to de.re.quickmarksb</li>
+               <li>tested more in Eclipse 3 and documented important notes</li>
+            </ul>
+       </action>
+     </release>
+     <release version="1.0.10" date="2004-07-11">
+       <action dev="deerwood" type="update" >
+            Heavily extended the plugin. 
+            Namely added a preference page, handling of duplicate marks and 
+            messaging the user. This is mainly for Eclipse 2.1, but runs in 
+            Eclipse 3.0 'compatibility mode', a port to Eclipse 3.0 is 
+            underway.
+       </action>
+     </release>
+     <release version="1.0.1" date="2004-05-23">
+       <action dev="linnet" type="update" >
+         Fixed a couple of problems with attempting to set quickmarks in non-text editors (like the PDE form editors).<br/>
+         Keyboard shortcut changed as it conflicted with (at least) Danish keyboard layouts.
+       </action>
+     </release>
+     <release version="1.0.0" date="2004-05-15">
+       <action dev="linnet" type="update" >
+         Initial release.
+       </action>
+     </release>
+   </body>
+</document>
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project>
+   <pomVersion>3</pomVersion>
+
+   <id>eclipse-tools</id>
+
+   <name>Eclipse-Tools project</name>
+
+   <currentVersion></currentVersion>
+
+   <organization>
+      <name>Jesper Kamstrup Linnet</name>
+
+      <url>http://sourceforge.net/projects/eclipse-tools</url>
+
+      <logo>http://sourceforge.net/sflogo.php?group_id=1&amp;type=5</logo>
+   </organization>
+
+   <inceptionYear>2003</inceptionYear>
+
+   <description>The purpose of the Eclipse-Tools project is to develop plugins for the Eclipse platform.</description>
+
+   <shortDescription>The purpose of the Eclipse-Tools project is to develop plugins for the Eclipse platform.</shortDescription>
+
+   <url>http://eclipse-tools.sourceforge.net</url>
+
+   <siteAddress>eclipse-tools.sourceforge.net</siteAddress>
+
+   <siteDirectory>/home/groups/e/ec/eclipse-tools/htdocs/</siteDirectory>
+
+   <distributionDirectory>/home/groups/e/ec/eclipse-tools/htdocs/${pom.id}/distributions/</distributionDirectory>
+
+   <versions>
+   </versions>
+
+   <branches>
+   </branches>
+
+   <developers>
+      <developer>
+         <name>Jesper Kamstrup Linnet</name>
+
+         <id>linnet</id>
+
+         <email>linnet@nospam.users.sourceforge.net</email>
+
+         <organization>
+         </organization>
+
+         <roles>
+            <role>Developer</role>
+         </roles>
+      </developer>
+   </developers>
+
+   <dependencies/>
+
+   <build>
+      <nagEmailAddress>linnet@nospam.users.sourceforge.net</nagEmailAddress>
+
+      <sourceDirectory>src</sourceDirectory>
+
+      <unitTestSourceDirectory>test</unitTestSourceDirectory>
+
+      <integrationUnitTestSourceDirectory />
+
+      <aspectSourceDirectory>
+      </aspectSourceDirectory>
+
+<!-- Unit test classes -->
+      <unitTest>
+         <includes>
+            <include>**/*Test.java</include>
+         </includes>
+      </unitTest>
+
+<!-- J A R  R E S O U R C E S -->
+<!-- Resources that are packaged up inside the JAR file -->
+      <resources>
+      </resources>
+   </build>
+   <reports>
+   	  <report>maven-changes-plugin</report>
+   </reports>
+</project>
+

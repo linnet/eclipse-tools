@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<project
+  xmlns:j="jelly:core"
+  xmlns:maven="jelly:maven"
+  xmlns:m="maven">
+
+  <goal name="init" prereqs="xdoc:init">
+    <j:set var="docsDest"
+      value="${pom.getPluginContext('maven-xdoc-plugin').getVariable('maven.docs.dest')}"/>
+  </goal>
+
+  <goal name="pack" prereqs="init,clean,site:generate" description="Packs the site for distribution">
+    <!-- This needs to taken from the project properties -->
+
+    <tar tarfile="${maven.build.dir}/${maven.final.name}-site.tar" basedir="${docsDest}"/>
+    <gzip zipfile="${maven.build.dir}/${maven.final.name}-site.tar.gz" src="${maven.build.dir}/${maven.final.name}-site.tar"/>
+    <delete file="${maven.build.dir}/${maven.final.name}-site.tar"/>
+  </goal>
+  
+  <goal name="sshdeploy" prereqs="pack" description="Deploys the site using scp">
+    <property name="maven.homepage" value="${pom.siteDirectory}"/>
+    <j:set var="maven.scp.executable" value="pscp.exe"/>
+    <!-- <property name="maven.scp.executable" value="pscp.exe"/> -->
+    <!-- Make sure the destination directory exists before trying to copy -->
+    
+    <echo>
+    	Uploading from: ${maven.build.dir}
+    	File: ${maven.final.name}-site.tar.gz
+    	SCP implementation: ${maven.scp.executable}
+    </echo>
+    <exec dir="${maven.build.dir}" executable="${maven.scp.executable}">
+      <arg line="-pw ${maven.password} ${maven.final.name}-site.tar.gz ${maven.username}@${pom.siteAddress}:${maven.homepage}"/>
+    </exec>
+    <delete file="${maven.build.dir}/${maven.final.name}-site.tar.gz"/>
+  
+  </goal>
+</project>

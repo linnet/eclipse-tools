@@ -1,0 +1,146 @@
+<!-- $Header: /cvsroot/eclipse-tools/net.sourceforge.eclipsetools.quickmarks/html/reference/visibility.html,v 1.2 2004/07/18 02:45:38 deerwood Exp $ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<title>Quickmarks Plugin: Changing visibility in views</title>
+	<link href="../doc.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+	<h1 class="head">Quickmarks Plugin: Changing visibility in views</h1>
+	<p>If you don't like to have Quickmarks in Task and/or Bookmarks view you 
+		must edit the <code>plugin.xml</code> of this plugin.</p>
+
+	<a id="eclipse3" name="eclipse3"></a>
+	<h2>Important note for Eclipse 3.0 users</h2>
+	<p>Before you change the <code>plugin.xml</code> in any way <strong>be sure 
+		to remove any and all Quickmarks set!</strong> If you don't, then 
+		you'll receive error messages from the views you have disabled and 
+		thei'll continue to show the old Quickmarks (not functional though). 
+		And you can't get rid of both, errors and stale marks, at least not 
+		easily!!!</p>
+	<p>Also better <strong>disable the Quickmarks feature</strong> before 
+		changing the <code>plugin.xml</code> by: Help >> Software Updates >> 
+		Manage Configuration ... Locate the "Quickmarks 1.x.x" in the tree 
+		under "Eclipse Platform" and select it. On the right side click on 
+		"Disable". When asked to restart Eclipse, choose no. Instead exit 
+		Eclipse then and change the <code>plugin.xml</code> as 
+		desired/described below.</p>
+	<p>After the change you must re-enable the feature by: again Help >> 
+		Software Updates >> Manage Configuration ... Then be sure to have the 
+		button "Show Disabled Features" activated, else you won't see the 
+		Quickmarks. Locate "Quickmarks 1.x.x" as above and click on it in the 
+		tree. On the right side click "Enable". When asked to restart Eclipse 
+		this time choose "OK". After the restart customize the perspectives 
+		again to enable the Quickmarks. If you have choosen to show the 
+		Quickmarks in any view, that has a filter (all three, Bookmarks, 
+		Problem and Task view have filter settings in Eclipse 3) then look at 
+		the filter settings and enable "Quickmark" to have them actually 
+		shown!</p>
+	<p>If you strictly follow this procedure the Quickmarks <em>should</em> 
+		work with the changed settings then and without any problem. Otherwise 
+		restart Eclipse 3 once more (Eclipse 3 seems to cache much more, than 
+		Eclipse 2.1 did, even invalid things)! But if you forgot to delete all 
+		existing Quickmarks, then best revert back to your previous 
+		configuration, then follow this procedure again 
+		<strong>carefully</strong>!</p>
+	<p>And there are 2 more things to note for Eclipse 3:</p>
+	<ul>
+		<li>Having Quickmarks shown in more than 1 view, which works easily in 
+			Eclipse 2.1, does not work in Eclipse 3 anymore. E.g. with default 
+			settings (Bookmark and Problem view configured) the Quickmarks show 
+			correctly in the Bookmark view, but not really in the Problem view 
+			(although they are listed in the filter settings of the Problem 
+			view they are inconsistently <strong>not</strong> shown in the view 
+			itself, even when enabled)! So better choose the one and only view 
+			to show them in, we suggest the Bookmarks or the Task view for 
+			Eclipse 3, both are normally much less cluttered than the Problem 
+			view and all 3 have filter settings in Eclipse 3. A bug report to 
+			the Eclipse team regarding this wrong behaviour will be issued 
+			soon.</li>
+		<li>
+			<p>Having Quickmarks shown in any view in Eclipse 3 disables the 
+				display of the special Quickmarks icons (the decorated 
+				numbers). This is due to, hmmm, let's call it "not a really 
+				good" implementation of the internal 
+				MarkerImageProviderRegistry, but to most extent our fault, as 
+				we are using "internal API" (see <a 
+				href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=69894">Eclipse 
+				Bug 69894</a> for an enhancement request to make marker image 
+				providers public API and more details about the 
+				MarkerImageProviderRegistry, feel free to <a 
+				href="https://bugs.eclipse.org/bugs/votes.cgi?action=show_user&amp;bug_id=69894">vote 
+				for this request</a> :-).</p>
+			<p>If you prefer to have the special icons instead of a display in 
+				one of the standard views, then change the Quickmarks super 
+				type to <code>"org.eclipse.core.resources.marker"</code>, as 
+				described below!</p>
+		</li>
+	</ul>
+	<p>We are sorry for the inconvenience for Eclipse 3 users, but most of 
+		these issues seem not to be our fault (except for the special images, 
+		because of our use of internal API). And this all has nothing to do 
+		with the Quickmarks beeing an Eclipse 2.1 feature run in compatibility 
+		mode on Eclipse 3: first implementations of a native Eclipse 3 
+		Quickmarks feature reveal the very same issues!</p>
+
+	<h2>How to change the visibility in views</h2>
+	<p>Locate <code>plugin.xml</code> under 
+		<code>&lt;ECLIPSE&gt;/plugins/net.sourceforge.eclipsetools.quickmarks_1.x.x</code> 
+		and load it into any text editor. Find the extension 
+		<code>point="org.eclipse.core.resources.markers"</code> subtag 
+		<code>&lt;super&gt;</code>. As delivered there are two of them:</p>
+	<pre>
+    &lt;super
+        type="org.eclipse.core.resources.problemmarker"&gt;
+    &lt;/super&gt;
+    &lt;super
+        type="org.eclipse.core.resources.bookmark"&gt;
+    &lt;/super&gt;
+	</pre>
+	<p>You can remove one or the other or even change the type. Another usable 
+		type you might want to try instead of the problemmarker is 
+		<code>"org.eclipse.core.resources.taskmarker"</code>.</p>
+	<p>This will turn the task view display of the Quickmarks:</p>
+	<p>
+		<img src="../img/task_edited.gif" alt="" 
+			title="Quickmark in the task view editable and deletable"/>
+	</p>
+	<p>Now the Quickmarks are shown similar to normal tasks: the description is 
+		easily editable and the mark deletable in the task view! You can check 
+		a Quickmark as beeing done/obsolete and then delete all obsolete ones 
+		in one action from the task views menu. Note however, that even while 
+		the Quickmarks <em>look</em> like normal tasks they <em>remain to be 
+		Quickmarks</em>, considered for automatic deletion by a Quickmark move 
+		or delete. Any message added to the Quickmark is silently lost. So 
+		don't edit important comments into your Quickmarks, add a real task or 
+		bookmark at that location instead!</p>
+	<p>Why isn't this done by default? It's just that similarity to real tasks 
+		with the potential loss of important messages and the fact, that 
+		clicking the description immediately takes one into editing mode 
+		instead of jumping to the mark in the first place.</p>
+	<p> To don't show the Quickmarks in any view, thus beeing only visible in 
+		the side bars of editors (and have the special icons shown in Eclipse 
+		3) choose only to have the super type 
+		<code>"org.eclipse.core.resources.marker"</code>.</p>
+	<p>If you don't want the Quickmarks to be persisted over Eclipse sessions 
+		remove the <code>&lt;persistent&gt;</code> tag directly following the 
+		<code>&lt;super&gt;</code> tags. Restart Eclipse to see your 
+		changes.</p>
+	<p>See:</p>
+	<ul>
+		<li><a href="../what_it_does.html">What it does</a></li>
+		<li><a href="../how_to_use.html">How to use it</a></li>
+		<li>Reference
+			<ul>
+				<li><a href="evidence.html">Evidence in the user interface</a></li>
+				<li><a href="preference.html">Preference options</a></li>
+				<li><strong>Changing visibility in views</strong></li>
+				<li><a href="styles.html">Switching to another style</a></li>
+			</ul>
+		</li>		
+	</ul>
+</body>
+</html>
+<!--EOF-->

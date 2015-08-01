@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<document>
+   <properties>
+      <author email="linnet@nospam.users.sourceforge.net">Jesper Kamstrup Linnet</author>
+
+      <title>Changes</title>
+   </properties>
+
+   <body>
+     <release version="In CVS" date="No known release date">
+       <action dev="linnet" type="update" >
+         Added Japanese messages. Patch provided by Shinji Miyamoto.
+       </action>
+     </release>
+     <release version="1.0.6 / 0.9.6" date="2004-05-23">
+       <action dev="linnet" type="update" >
+         Fix for bug 954995 - Crash when IProjectDescription.getLocation() returns null. Patch provided by Michael Scharf.
+       </action>
+     </release>
+     <release version="1.0.5" date="2004-05-15">
+       <action dev="linnet" type="update" >
+         Minor update of the Eclipse 3.0 version to be compatible with M9.
+       </action>
+     </release>
+     <release version="0.9.4" date="2004-05-07">
+       <action dev="linnet" type="update" >
+         Made a copy of the v1.0.4 plugin for Eclipse 2.1.x.
+       </action>
+     </release>
+     <release version="1.0.4" date="2004-03-27">
+       <action dev="linnet" type="update" >
+         Added a check for missing classpath and path variables and user libraries on import.
+         Currently, these missing variables are presented in a message box as a simple information.
+         Also changed the prefix determination algorithm to act in a case insensitive way on Windows.
+       </action>
+     </release>
+     <release version="1.0.3" date="2004-03-20" description="Initial official release.">
+       <action dev="linnet" type="update" >
+         Initial official release.
+       </action>
+     </release>
+   </body>
+</document>
+

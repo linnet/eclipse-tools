@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project>
+   <pomVersion>3</pomVersion>
+
+   <id>projecttransfer</id>
+
+   <name>Multi Project Import/Export plugin</name>
+
+   <currentVersion>1.0.6</currentVersion>
+
+   <organization>
+      <name>Jesper Kamstrup Linnet</name>
+
+      <url>http://sourceforge.net/projects/eclipse-tools/projecttransfer</url>
+
+      <logo>http://sourceforge.net/sflogo.php?group_id=1&amp;type=5</logo>
+   </organization>
+
+   <inceptionYear>2004</inceptionYear>
+
+   <package>dk.kamstruplinnet.projecttransfer</package>
+
+   <description>The Multi Project Import/Export plugin adds the possibility to export or import multiple projects at a time.</description>
+
+   <shortDescription>The Multi Project Import/Export plugin adds the possibility to export or import multiple projects at a time.</shortDescription>
+
+   <url>http://eclipse-tools.sourceforge.net/projecttransfer</url>
+
+   <siteAddress>eclipse-tools.sourceforge.net</siteAddress>
+
+   <siteDirectory>/home/groups/e/ec/eclipse-tools/htdocs/</siteDirectory>
+
+   <distributionDirectory>/home/groups/e/ec/eclipse-tools/htdocs/${pom.id}/distributions/</distributionDirectory>
+
+   <versions>
+
+   </versions>
+
+   <branches>
+   </branches>
+
+   <developers>
+      <developer>
+         <name>Jesper Kamstrup Linnet</name>
+
+         <id>linnet</id>
+
+         <email>linnet@nospam.users.sourceforge.net</email>
+
+         <organization>
+         </organization>
+
+         <roles>
+            <role>Developer</role>
+         </roles>
+      </developer>
+   </developers>
+
+   <dependencies/>
+
+   <build>
+      <nagEmailAddress>linnet@nospam.users.sourceforge.net</nagEmailAddress>
+
+      <sourceDirectory>src</sourceDirectory>
+
+      <unitTestSourceDirectory>test</unitTestSourceDirectory>
+
+      <integrationUnitTestSourceDirectory />
+
+      <aspectSourceDirectory>
+      </aspectSourceDirectory>
+
+<!-- Unit test classes -->
+      <unitTest>
+         <includes>
+            <include>**/*Test.java</include>
+         </includes>
+      </unitTest>
+
+<!-- J A R  R E S O U R C E S -->
+<!-- Resources that are packaged up inside the JAR file -->
+      <resources>
+      </resources>
+   </build>
+   <reports>
+   	  <report>maven-changes-plugin</report>
+   </reports>
+</project>
+

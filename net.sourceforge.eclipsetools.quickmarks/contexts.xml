@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- $Header: /cvsroot/eclipse-tools/net.sourceforge.eclipsetools.quickmarks/contexts.xml,v 1.1 2004/07/16 00:59:06 deerwood Exp $ -->
+<!DOCTYPE contexts SYSTEM 
+	"file:///C:/eclipse/plugins/org.eclipse.help_2.1.2/dtd/contexts.dtd">
+<contexts>
+	<context id="ctx_pref_scope">
+		<description>Choose the scope of Quickmark sets.</description>
+		<topic href="html/what_it_does.html" label="Quickmarks Both Styles"></topic>
+		<topic href="html/reference/preference.html#scope" label="Quickmarks Preferences: Scope"></topic>
+	</context>
+	<context id="ctx_pref_multiple">
+		<description>Set how multiple Quickmark are handled.</description>
+		<topic href="html/what_it_does.html" label="Quickmarks Both Styles"></topic>
+		<topic href="html/reference/preference.html#multiple" label="Quickmarks Preferences: Multiple marks"></topic>
+	</context>
+	<context id="ctx_pref_selection">
+		<description>How selections are remembered in Quickmarks.</description>
+		<topic href="html/what_it_does.html" label="Quickmarks Both Styles"></topic>
+		<topic href="html/reference/preference.html#selection" label="Quickmarks Preferences: Remembered Selection"></topic>
+	</context>
+	<context id="ctx_pref_delete">
+		<description>When to delete a Quickmark.</description>
+		<topic href="html/what_it_does.html" label="Quickmarks Both Styles"></topic>
+		<topic href="html/reference/preference.html#delete" label="Quickmarks Preferences: Delete Option"></topic>
+	</context>
+	<context id="ctx_pref_pattern">
+		<description>Set the name pattern of a Quickmark.</description>
+		<topic href="html/what_it_does.html" label="Quickmarks Both Styles"></topic>
+		<topic href="html/reference/preference.html#pattern" label="Quickmarks Preferences: Name pattern"></topic>
+	</context>
+	<context id="ctx_act_gotomark">
+		<description>Go to an existing Quickmark.</description>
+		<topic href="html/what_it_does.html" label="Quickmarks Both Styles"></topic>
+		<topic href="html/how_to_use.html" label="How to use the Quickmarks"></topic>
+	</context>
+	<context id="ctx_act_setmark">
+		<description>Set/move/delete a Quickmark.</description>
+		<topic href="html/what_it_does.html" label="Quickmarks Both Styles"></topic>
+		<topic href="html/how_to_use.html" label="How to use the Quickmarks"></topic>
+	</context>
+</contexts>
+<!-- EOF -->

@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<document>
+   <properties>
+      <author email="linnet@nospam.users.sourceforge.net">Jesper Kamstrup Linnet</author>
+
+      <title>Usage</title>
+   </properties>
+
+   <body>
+      <section name="Activation of the wizards">
+            <p>
+            The Export and the Import wizards are activated from the ordinary Export... or Import... wizard
+            selections (for example from the Package Explorer view or the Navigator view).</p>
+      </section>
+
+      <section name="Using the Export wizard">
+            <ol>
+            <li>Select the projects to be exported from the list of all projects in the workspace.</li>
+            <li>Enter the export location and optionally the "Source root path". This term is explained further below.
+            The source root path may be left blank, entered or selected from the list of suggestions.</li>
+            <li>Press Finish and the projects are exported</li>
+            </ol>
+            <p>
+            If the purpose of the export is to recreate the workspace elsewhere, the source root path should be
+            set to a location common to all the exported projects. Ultimately, you may choose the root of the 
+            file system.
+            </p>
+
+         <subsection name="The source root path">
+            <p>
+            The Export wizard is able to keep the physical directory structure of the projects. This is useful
+            if the exported project description files (.project (and .classpath for Java projects)) are copied "over" an existing
+            source repository which does not contain the project description files.
+            </p>
+            <p>
+            The source root path indicates the common "prefix" of these project description files. If the project is located
+            below the specified source root path, it will be created in the export directory as is was placed relatively to the
+            source root. If the project is not located below the source root path, it is export to the root of the export directory.
+            An example:
+            </p>
+            <p>
+            <img src="images/directorystructure.png"/>
+            </p>
+            <p>
+            With this directory structure, the table below shows what different values of the
+            source root path would generate in the export directory.
+            </p>
+            <table>
+            <tr><th>Source root path</th><th>Contents of the root of the export directory ("projects")</th></tr>
+            <tr><td>(none)</td><td><img src="images/sourceroot-none.png"/></td></tr>
+            <tr><td>Above the root of the source repository</td><td><img src="images/sourceroot-above.png"/><br/>Note how the root directory of the source repository is included in the directory structure.</td></tr>
+            <tr><td>The root of the source repository</td><td><img src="images/sourceroot-repository.png"/></td></tr>
+            <tr><td>Outside the source repository</td><td><img src="images/sourceroot-none.png"/></td></tr>
+            </table>
+            <p>
+            If you have all your source located in one directory structure, the recommended source root path is the root of this
+            source repository.
+            </p>
+         </subsection>
+      </section>
+      <section name="Using the Import wizard">
+            <ol>
+            <li>Enter the root of the directory structure which should be search for project description files.</li>
+            <li>Select the projects to be imported from the list of all projects in the workspace.</li>
+            <li>Press Finish and the projects are imported.</li>
+            </ol>
+      </section>
+   </body>
+</document>
+

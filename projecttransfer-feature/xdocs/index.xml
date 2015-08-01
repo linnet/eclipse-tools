@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<document>
+   <properties>
+      <author email="linnet@nospam.users.sourceforge.net">Jesper Kamstrup Linnet</author>
+
+      <title>Multi Project Import/Export feature</title>
+   </properties>
+
+   <body>
+      <section name="Multi Project Import/Export feature">
+         <p>This plugin adds an import and an export wizard. These wizards allow the user
+         to export or import multiple projects in one go, thus e.g. easing the process of creating
+         a new workspace.</p>
+		 
+         <p>Latest version for Eclipse 3.0 M9: <b>v1.0.6</b></p>
+         <p>Latest version for Eclipse 3.0 M8: <b>v1.0.4</b></p>
+         <p>Latest version for Eclipse 2.1.x: <b>v0.9.6</b></p>
+         <p>(see <a href="changes-report.html">changes</a>) or <a href="download.html">download</a>.</p>
+      </section>
+   </body>
+</document>
+

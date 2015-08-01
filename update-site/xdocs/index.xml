@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<document>
+   <properties>
+      <author email="linnet@nospam.users.sourceforge.net">Jesper Kamstrup Linnet</author>
+
+      <title>Eclipse-Tools project</title>
+   </properties>
+
+   <body>
+      <section name="Eclipse-Tools project">
+         <p>The purpose of the Eclipse-Tools project is to develop plugins for the Eclipse platform.</p>
+         <p>Currently, the project has released these plugins<ul>
+             <li>A Call Hierarchy View Plugin (for Eclipse 2.1.x)</li>
+             <li>An Implementors Plugin</li>
+             <li>A Multi Project Import/Export Plugin</li>
+             <li>A Quickmarks Plugin</li>
+         </ul></p>
+         <p>Additional resources available from this project<ul>
+             <li>Keyboard Shortcuts Quick Reference Sheets</li>
+         </ul></p>
+      </section>
+   </body>
+</document>
+

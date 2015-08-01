@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<document>
+   <properties>
+      <author email="linnet@nospam.users.sourceforge.net">Jesper Kamstrup Linnet</author>
+      <author email="deerwood@nospam.users.sourceforge.net">Georg Rehfeld</author>
+
+      <title>Quickmarks feature</title>
+   </properties>
+
+   <body>
+      <section name="Quickmarks">
+         <p>This plugin adds "quickmarks" (i.e. quick bookmarking) functionality by simple key strokes without having to fill in dialogs.
+         The plugin is inspired by the work by Florin (chronos21F (-at-) hotmail.com) as 
+         "published" on <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=22491">Bugzilla on Eclipse.org</a> and
+         this other <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=6698">Eclipse bug report</a>. The plugin has subsequently
+         been enhanced heavily by Georg Rehfeld (who is responsible for practically all development following version 1.0.1).</p>
+
+		 <p>The plugin exists in an Eclipse 2.1.x and an Eclipse 3.x version. Please select the appropriate version on the download page.</p>
+
+         <subsection name="Features">
+            <p>With this plugin it is possible to work in 
+               both styles around, "B" company style (default) with 10 directly 
+               settable/jumpable Quickmarks, switching/opening editors when 
+               neccessary, and "M" company style with only 3 key bindings, an 
+               unlimited number of Quickmarks, but having to toggle through 
+               them forward/backward. It is also fairly configurable to give 
+               you the best of both worlds. And it comes with detailed online 
+               documentation.</p>
+         </subsection>
+		 
+         <subsection name="Versions">
+            <p>Latest version for Eclipse 3.x: <b>v3.0.2</b></p>
+            <p>Latest version for Eclipse 2.1.x: <b>v1.0.11</b></p>
+            <p>(see <a href="changes-report.html">changes</a>) or <a href="download.html">download</a>.</p>
+         </subsection>
+      </section>
+   </body>
+</document>
+

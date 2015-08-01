@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<document>
+   <properties>
+      <author email="linnet@nospam.users.sourceforge.net">Jesper Kamstrup Linnet</author>
+
+      <title>Subprojects</title>
+   </properties>
+
+   <body>
+      <section name="Subproject">
+         <p>The purpose of the Eclipse-Tools project is to develop plugins for the Eclipse platform.</p>
+         <p>Currently, the project has released three plugins<ul>
+             <li>A Call Hierarchy View</li>
+             <li>An Implementors plugin</li>
+             <li>A Multi Project Transfer plugin</li>
+         </ul></p>
+         <subsection name="Call Hierarchy View">
+            <p>The Call Hierarchy plugin is an Eclipse view for showing calls to or calls from a method.</p>
+         </subsection>
+         <subsection name="Implementors">
+            <p>The Implementors plugins add the possibility to jump to a method declaration in a implementation
+            class instead of an interface.</p>
+            <p>The jumping to implementing methods works for plain Java files. In addition, when associating EJB
+            deployment descriptors with a project, the plugin is made aware of the connection between the EJB interfaces
+            and the implementation class, something which is not specified in the implementation class itself.</p>
+         </subsection>
+         <subsection name="Multi Project Transfer">
+            <p>The Multi Project Transfer plugin are wizards for exporting or importing multiple projects at a time.</p>
+         </subsection>
+      </section>
+   </body>
+</document>
+

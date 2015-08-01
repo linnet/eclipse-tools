@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="Eclipse-Tools Project">
+   <title>Eclipse-Tools Project</title>
+
+   <body>
+      <links>
+         <item name="Eclipse Tools" href="http://eclipse-tools.sourceforge.net" />
+
+         <item name="Eclipse.org" href="http://www.eclipse.org" />
+      </links>
+
+      <menu name="Overview">
+         <item name="Front Page" href="/index.html" />
+
+         <item name="Subprojects" href="/subprojects.html" collapse="false">
+            <item name="Call Hierarchy View" href="http://eclipse-tools.sourceforge.net/call-hierarchy/index.html"/>
+            <item name="Implementors" href="http://eclipse-tools.sourceforge.net/implementors/index.html"/>
+            <item name="Multi Project Import/Export" href="http://eclipse-tools.sourceforge.net/projecttransfer/index.html"/>
+            <item name="Quickmarks" href="http://eclipse-tools.sourceforge.net/quickmarks/index.html"/>
+            <item name="Keyboard Shortcuts" href="/shortcuts.html"/>
+         </item>
+
+         <item name="Download" href="/download.html" />
+
+         <item name="Your comments" href="/comments.html" />
+      </menu>
+   </body>
+</project>
+

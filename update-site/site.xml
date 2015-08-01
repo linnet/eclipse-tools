@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description url="index.html">
+      The Eclipse-Tools project delivers projects adding functionality to the Eclipse IDE.
+   </description>
+   <feature url="features/dk.kamstruplinnet.callhierarchy_0.5.1.jar" id="dk.kamstruplinnet.callhierarchy" version="0.5.1">
+      <category name="Call Hierarchy"/>
+   </feature>
+   <feature url="features/dk.kamstruplinnet.implementors_0.0.10.jar" id="dk.kamstruplinnet.implementors" version="0.0.10">
+      <category name="Implementors"/>
+   </feature>
+   <feature url="features/dk.kamstruplinnet.implementors_0.0.11.jar" id="dk.kamstruplinnet.implementors" version="0.0.11">
+      <category name="Implementors"/>
+   </feature>
+   <feature url="features/dk.kamstruplinnet.projecttransfer_0.9.4.jar" id="dk.kamstruplinnet.projecttransfer" version="0.9.4">
+      <category name="Multi Project Transfer (for Eclipse 2.1.x)"/>
+   </feature>
+   <feature url="features/dk.kamstruplinnet.implementors_0.0.12.jar" id="dk.kamstruplinnet.implementors" version="0.0.12">
+      <category name="Implementors"/>
+   </feature>
+   <feature url="features/dk.kamstruplinnet.quickmarks_1.0.1.jar" id="dk.kamstruplinnet.quickmarks" version="1.0.1">
+      <category name="Quickmarks"/>
+   </feature>
+   <feature url="features/dk.kamstruplinnet.projecttransfer_1.0.6.jar" id="dk.kamstruplinnet.projecttransfer" version="1.0.6">
+      <category name="Multi Project Transfer"/>
+   </feature>
+   <feature url="features/dk.kamstruplinnet.implementors_0.0.13.jar" id="dk.kamstruplinnet.implementors" version="0.0.13">
+      <category name="Implementors"/>
+   </feature>
+   <feature url="features/dk.kamstruplinnet.projecttransfer_0.9.6.jar" id="dk.kamstruplinnet.projecttransfer" version="0.9.6">
+      <category name="Multi Project Transfer (for Eclipse 2.1.x)"/>
+   </feature>
+   <feature url="features/dk.kamstruplinnet.implementors_0.0.14.jar" id="dk.kamstruplinnet.implementors" version="0.0.14">
+      <category name="Implementors"/>
+   </feature>
+   <feature url="features/dk.kamstruplinnet.implementors_0.0.16.jar" id="dk.kamstruplinnet.implementors" version="0.0.16">
+      <category name="Implementors"/>
+   </feature>
+   <category-def name="Call Hierarchy" label="call-hierarchy"/>
+   <category-def name="Implementors" label="implementors"/>
+   <category-def name="Multi Project Transfer" label="projecttransfer"/>
+   <category-def name="Multi Project Transfer (for Eclipse 2.1.x)" label="projecttransfer_eclipse2_1"/>
+   <category-def name="Quickmarks" label="quickmarks"/>
+</site>

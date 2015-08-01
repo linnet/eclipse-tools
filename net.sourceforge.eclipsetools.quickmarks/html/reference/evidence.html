@@ -1,0 +1,162 @@
+<!-- $Header: /cvsroot/eclipse-tools/net.sourceforge.eclipsetools.quickmarks/html/reference/evidence.html,v 1.1 2004/07/16 00:59:09 deerwood Exp $ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<title>Quickmarks Plugin: Evidence in the user interface</title>
+	<link href="../doc.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+	<h1 class="head">Quickmarks Plugin: Evidence in the user interface</h1>
+	<p>Although the Quickmarks are primarily meant to be used just by keyboard 
+		shortcuts they show up in several places in the UI.</p>
+	<h2>1. Left and right to the editor</h2>
+	<p>Left of the current editor (the marker bar) Quickmarks show up with 
+		special icons: the Quickmark number decorated.</p>
+	<p>With default settings the Quickmarks show up in the overview ruler right 
+		to the editor also as little yellow marks (this depends on the markers 
+		beeing a 'problemmarker' or 'bookmark', see <a 
+		href="visibility.html">Changing visibility in views</a>).</p>
+	<p><img src="../img/setmark.gif" alt="" 
+			title="display of a Quickmark left/right to the editor"/></p>
+
+	<h2>2. Status line</h2>
+	<p>Every attempt to set/move/delete/jump to a Quickmark is shown in the 
+		statusline with an appropriate message telling you what happened. This 
+		message is automatically removed after some time, if you do nothing, 
+		and immediately, when you change the current selection (simple cursor 
+		movement doesn't count, select some text region, switch editors, 
+		activate some view).</p>
+	<p>Failed attempts are messaged in red and accompanied by a beep. Look at 
+		the statusline to see the reason. Failures are usually harmless, e.g. 
+		"No Quickmark # to go to ..." or "Can't set Quickmark #: 
+		&lt;reason&gt;".</p>
+	<p><img src="../img/sl_nogoto.gif" alt="" title="a harmless error message"/>
+	</p>
+	<p>Severe errors are logged and the plugin opens/shows the error log 
+		automatically. If this happens to you then please consider a bug 
+		report to us.</p>
+
+	<a id="menu" name="menu"></a>
+	<h2>3. Menu</h2>
+	<p>You can set/move/delete and jump to Quickmarks using the "Navigate" 
+		menu, if you prefer. This is also a place to look for the active key 
+		bindings, if you changed and have forgotten about them. See also
+		<a href="#keybinding">Key binding</a> below.</p>
+	<p><img src="../img/menu.gif" alt="" title="Quickmark menu"/></p>
+	<p>Notice the 2 'Go to' alternatives for Mark 0. With only one Quickmark 0 
+		set there is no behaviour difference. But you can have multiple 
+		Quickmarks with the same number (by accident or by intention, see <a 
+		href="preference.html#multiple">Handling Multiple Marks</a>). Then the 
+		behaviour is to move forward from the current selection to the next 
+		existing Quickmark for all 'Go to Mark' actions except for <em>Go to 
+		previous Mark 0</em>, which moves backward. Quickmark 0 is also the one 
+		used, when this plugin is changed to behave in <a href="styles.html">"M 
+		company Style"</a>. A last reason for this additional action is, that 
+		the default key binding <em class="Key">Alt+0</em> is hidden by the 'Cut 
+		to Beginning of Line' action in the 'Emacs' configuration bound to <em 
+		class="Key">Alt+0 Ctrl+K</em>, so there is an alternate binding 
+		available to the experimenting Emacs user.</p>
+
+	<h2>4. Task view</h2>
+	<p>As delivered the Quickmarks show up as INFO items in the task view. 
+		Although this might clutter your task view we consider this a feature: 
+		the task view has the option of advanced filtering and sorting it's 
+		list, you have an overview of your Quickmarks and can jump to them with 
+		the mouse. If you don't like this, you can change it, see <a 
+		href="visibility.html">Changing visibility in views</a>. But more 
+		easily you just might filter out Quickmarks to be not shown in the task 
+		view (or even show only Quickmarks, try it). You can't edit or delete a 
+		Quickmark from this view by default.</p>
+	<p><img src="../img/taskview.gif" alt="" 
+			title="task view with 2 Quickmarks set"/></p>
+	<p><img src="../img/filter.gif" alt="" 
+			title="Filtering out Quickmarks from task view"/></p>
+
+	<h2>5. Bookmarks view</h2>
+	<p>By default the Quickmarks also show up in the bookmarks view. Here you 
+		have the option of changing the name of the Quickmark, for instance to 
+		add a minor comment (from the context menu of a bookmark >> 
+		Properties). The changed description shows up in the task view too. You 
+		again can <a href="visibility.html">change the plugin</a>, so that the 
+		Quickmarks ain't shown in the bookmarks view at all. But having 
+		Quickmarks in this view has several advantages: the Quickmarks 
+		description is editable and the Quickmark is <strong>deletable</strong> 
+		from within this view. Also this view normally is much less cluttered 
+		than the task view.</p>
+	<p><img src="../img/bookmarkview.gif" alt="" 
+			title="bookmarks view with 2 Quickmarks set"/></p>
+	<p>Be aware that when you rename a Quickmark via this view this will NOT 
+		change the Quickmark into a regular bookmark, it remains to be a 
+		Quickmark and is still considered as a candidate for jumping and beeing 
+		automatically deleted as any other Quickmark. So, don't add important 
+		comments via the bookmarks view for a Quickmark! Consider adding a 
+		normal bookmark or a task at that location instead.</p>
+
+	<a id="keybinding" name="keybinding"></a>
+	<h2>6. Key binding</h2>
+	<p>You can change the default key binding via the Preferences 
+		Workbench >> Keys. They are found inside the Navigate section.</p>
+	<p><img src="../img/pref_key1.gif" alt="" 
+			title="Quickmarks keyboard preferences"/></p>
+	<p>Note, that with the default key binding there is a conflict for jumping 
+		to Quickmark 0. We've still choosen this binding, as it feels natural, 
+		Emacs users possibly are happy with their special "point and mark" 
+		feature anyway, or finally might just don't use Quickmark 0 by 
+		unbinding "Set Quickmark 0" in their "Emacs" configuration.</p>
+	<p>You can change the key bindings for this extension. Feel free to do it. 
+		Remember, that Eclipse has Emacs style key binding support too, so you 
+		can have a prefix key, say <em 
+		class="Key">Ctrl+M&nbsp;0</em>&nbsp;-&nbsp;<em 
+		class="Key">Ctrl+M&nbsp;9</em>.</p>
+	<p>If you prefer 'pure' B company style or M company style, please read the
+		section <a href="styles.html">switching to another style</a>.</p>
+	<p>If you rebind yourself, would you please consider to tell us: what keys 
+		have you choosen and why felt you that to be nessessary?</p>
+	<p><img src="../img/pref_key2.gif" alt="" 
+			title="Quickmarks keyboard preferences"/></p>
+
+	<h2>7. Customize Perspective</h2>
+	<p>To have the Quickmarks available in perspectives you already had
+		customized before installing the Quickmarks, you must customize these
+		perspectives again and enable "Quickmarks Both Styles" in the "Other"
+		section.</p>
+	<p>Perspectives not yet customized have the Quickmarks enabled by default.</p>
+	<p><img src="../img/cust_perspective.gif" alt="" 
+			title="Quickmarks enabled in customize perspective"/></p>
+
+	<h2>8. Startup</h2>
+	<p>In the preference page Workbench >> Startup this plugin is listed and 
+		checked by default. This is essential to have the correct Quickmark 
+		icons shown left to the editor when Eclipse is started. If you uncheck 
+		this, the Quickmarks continue to work correctly, but are shown only 
+		with a default icon (a decorated arrow right) in all editors open on 
+		workbench startup.</p>
+	<p>
+		<img src="../img/pref_startup.gif" alt="" 
+			title="startup preferences"/></p>
+
+	<h2>9. Preferences</h2>
+	<p>You might want to configure the Quickmark preferences. They are found 
+		under the Workbench preferences. See <a 
+		href="preference.html">Preference options</a> for a description of the 
+		options.</p>
+	<p><img src="../img/pref_quickmarks1.gif" alt="" 
+			title="Quickmark preferences location"/></p>
+	<p>See:</p>
+	<ul>
+		<li><a href="../what_it_does.html">What it does</a></li>
+		<li><a href="../how_to_use.html">How to use it</a></li>
+		<li>Reference
+			<ul>
+				<li><strong>Evidence in the user interface</strong></li>
+				<li><a href="preference.html">Preference options</a></li>
+				<li><a href="visibility.html">Changing visibility in views</a></li>
+				<li><a href="styles.html">Switching to another style</a></li>
+			</ul>
+		</li>		
+	</ul>
+</body>
+</html>
+<!--EOF-->

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Compile dk.kamstruplinnet.implementors" default="main">
+	<target name="main">
+		<ant antfile="build.xml" dir="../dk.kamstruplinnet.implementors.core" target="build.jars"/>
+		<ant antfile="build.xml" dir="../dk.kamstruplinnet.implementors.ui" target="build.jars"/>
+		<ant antfile="build.xml" dir="../dk.kamstruplinnet.implementors.ejb" target="build.jars"/>
+		<ant antfile="build.xml" dir="../dk.kamstruplinnet.implementors.gwt" target="build.jars"/>
+	</target>
+</project>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="Project Transfer Plugin">
+   <title>Multi Project Import/Export plugin</title>
+
+   <body>
+      <links>
+         <item name="Eclipse Tools" href="http://eclipse-tools.sourceforge.net" />
+
+         <item name="Eclipse.org" href="http://www.eclipse.org" />
+      </links>
+
+      <menu name="Overview">
+         <item name="Front Page" href="/index.html" />
+         
+         <item name="Features" href="/features.html" />
+
+         <item name="Download" href="/download.html" />
+
+         <item name="Usage" href="/usage.html" />
+
+         <item name="Your comments" href="/comments.html" />
+
+      </menu>
+   </body>
+</project>
+

@@ -1,0 +1,3333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keybindings>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Open Implementation</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Alt+F3]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>dk.kamstruplinnet.implementors.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Open Interface</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Ctrl+Alt+F3]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>dk.kamstruplinnet.implementors.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Clearcase</category>
+    <name>Compare with Predecessor (Internal)</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+C, Alt+P]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>net.sourceforge.eclipseccase.3</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Clearcase</category>
+    <name>Associate</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+C, Alt+S]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>net.sourceforge.eclipseccase.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Clearcase</category>
+    <name>Dissociate</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+C, Alt+E]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>net.sourceforge.eclipseccase.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Clearcase</category>
+    <name>Uncheckout</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+C, Alt+U]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>net.sourceforge.eclipseccase.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Clearcase</category>
+    <name>Checkin</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+C, Alt+I]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>net.sourceforge.eclipseccase.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Clearcase</category>
+    <name>Refresh</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+C, Alt+R]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>net.sourceforge.eclipseccase.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Clearcase</category>
+    <name>Refresh Quick</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+C, Alt+Q]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>net.sourceforge.eclipseccase.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Clearcase</category>
+    <name>Checkout</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+C, Alt+O]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>net.sourceforge.eclipseccase.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Clearcase</category>
+    <name>Update</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+C, Alt+T]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>net.sourceforge.eclipseccase.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Clearcase</category>
+    <name>Add</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+C, Alt+A]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>net.sourceforge.eclipseccase.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Clearcase</category>
+    <name>Delete</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+C, Alt+D]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>net.sourceforge.eclipseccase.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Clearcase</category>
+    <name>Version Tree</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+C, Alt+V]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>net.sourceforge.eclipseccase.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Clearcase</category>
+    <name>Update (External)</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+C, Alt+X]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>net.sourceforge.eclipseccase.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Clearcase</category>
+    <name>History</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+C, Alt+H]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>net.sourceforge.eclipseccase.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Clearcase</category>
+    <name>Compare with predecessor</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+C, Alt+C]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>net.sourceforge.eclipseccase.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Clearcase</category>
+    <name>Find Checkouts</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+C, Alt+F]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>net.sourceforge.eclipseccase.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Compare</category>
+    <name>Copy from Right to Left</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.compare</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Compare</category>
+    <name>Copy from Left to Right</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.compare</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Compare</category>
+    <name>Copy All from Right to Left</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.compare</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Compare</category>
+    <name>Copy All from Left to Right</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.compare</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Compare</category>
+    <name>Select Next Change</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.compare</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Compare</category>
+    <name>Select Previous Change</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.compare</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Toggle Step Filters</name>
+    <scope></scope>
+    <sequence><![CDATA[Shift+F5]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Step Into</name>
+    <scope>Debugging</scope>
+    <sequence><![CDATA[F5]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Step Over</name>
+    <scope>Debugging</scope>
+    <sequence><![CDATA[F6]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Step Return</name>
+    <scope>Debugging</scope>
+    <sequence><![CDATA[F7]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Resume</name>
+    <scope>Debugging</scope>
+    <sequence><![CDATA[F8]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Terminate</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Suspend</name>
+    <scope>Debugging</scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Debug...</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Debug...</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Debug...</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Debug Last Launched</name>
+    <scope></scope>
+    <sequence><![CDATA[F11]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Run Last Launched</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+F11]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Profile Last Launched</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+F11]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Close Popup with Default Action</name>
+    <scope>Displaying Debug Popups</scope>
+    <sequence><![CDATA[Enter]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Run to Line</name>
+    <scope>Debugging</scope>
+    <sequence><![CDATA[Ctrl+R]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Toggle Watchpoint</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Toggle Method Breakpoint</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Add Java Exception Breakpoint</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Toggle Breakpoint</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Shift+B]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Step Into Selection</name>
+    <scope>Debugging</scope>
+    <sequence><![CDATA[Ctrl+F5]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Execute</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+U]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Display</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Shift+D]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Inspect</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Shift+I]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.debug.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Select Enclosing Element</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Alt+Shift+Up]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Select Next Element</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Alt+Shift+Right]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Select Previous Element</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Alt+Shift+Left]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Restore Last Selection</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Alt+Shift+Down]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Quick Fix</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Ctrl+1]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Quick Fix</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Command+1]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Show Tooltip Description</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[F2]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Show in Package Explorer</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Toggle Comment</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Ctrl+Shift+C]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Toggle Comment</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Shift+Command+C]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Toggle Comment</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Esc, Ctrl+C]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>gtk</platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Format</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Ctrl+Shift+F]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Format</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Shift+Command+F]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Format</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Esc, Ctrl+F]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>gtk</platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Sort Members</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Add Import</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Ctrl+Shift+M]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Add Import</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Shift+Command+M]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Organize Imports</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Shift+O]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Organize Imports</name>
+    <scope></scope>
+    <sequence><![CDATA[Shift+Command+O]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Override/Implement Methods</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Generate Getters and Setters</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Generate Delegate Methods</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Add Javadoc Comment</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Add Constructors from Superclass</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Generate Constructor using Fields</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Surround with try/catch Block</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Find Strings to Externalize</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Externalize Strings</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Add Block Comment</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Ctrl+Shift+/]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Add Block Comment</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Shift+Command+/]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Remove Block Comment</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Ctrl+Shift+\]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Remove Block Comment</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Shift+Command+\]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Indent Line</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Ctrl+I]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Undo - Refactoring</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Shift+Z]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Undo - Refactoring</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Command+Z]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Redo - Refactoring</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Shift+Y]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Redo - Refactoring</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Command+Y]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Rename - Refactoring</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Shift+R]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Rename - Refactoring</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Command+R]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Move - Refactoring</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Shift+V]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Move - Refactoring</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Command+V]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Change Method Signature</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Shift+C]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Change Method Signature</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Command+C]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Convert Anonymous Class to Nested</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Move Member Type to New File</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Push Down</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Pull Up</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Extract Interface</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category></category>
+    <name></name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Use Supertype Where Possible</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Inline</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Shift+I]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Inline</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Command+I]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Extract Method</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Shift+M]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Extract Method</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Command+M]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Extract Local Variable</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Shift+L]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Extract Local Variable</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Command+L]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Extract Constant</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Introduce Parameter</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Introduce Factory</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Convert Local Variable to Field</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Refactoring</category>
+    <name>Encapsulate Field</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Go to Next Member</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Ctrl+Shift+Down]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Go to Next Member</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Shift+Command+Down]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Go to Previous Member</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Ctrl+Shift+Up]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Go to Previous Member</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Shift+Command+Up]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category></category>
+    <name></name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Go to Matching Bracket</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Ctrl+Shift+P]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Go to Matching Bracket</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Shift+Command+P]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Show Outline</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Ctrl+O]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Show Outline</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Command+O]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Open Hierarchy</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Ctrl+T]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Open Hierarchy</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Command+T]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Open Structure</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Ctrl+F3]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Open Type</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Shift+T]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Open Type</name>
+    <scope></scope>
+    <sequence><![CDATA[Shift+Command+T]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Open Type in Hierarchy</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Shift+H]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Open Type in Hierarchy</name>
+    <scope></scope>
+    <sequence><![CDATA[Shift+Command+H]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Open Declaration</name>
+    <scope></scope>
+    <sequence><![CDATA[F3]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Open Super Implementation</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Open External Javadoc</name>
+    <scope></scope>
+    <sequence><![CDATA[Shift+F2]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Open Type Hierarchy</name>
+    <scope></scope>
+    <sequence><![CDATA[F4]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Open Call Hierarchy</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Alt+H]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Project</category>
+    <name>Generate Javadoc</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>References in Workspace</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Shift+G]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>References in Workspace</name>
+    <scope></scope>
+    <sequence><![CDATA[Shift+Command+G]]></sequence>
+    <configuration></configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>References in Hierarchy</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>References in Hierarchy</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>References in Working Set</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>Read Access in Workspace</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>Read Access in Workspace</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>Read Access in Hierarchy</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>Read Access in Working Set</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>Write Access in Workspace</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>Write Access in Project</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>Write Access in Hierarchy</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>Write Access in Working Set</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>Declaration in Workspace</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+G]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>Declaration in Workspace</name>
+    <scope></scope>
+    <sequence><![CDATA[Command+G]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>Declaration in Project</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>Declaration in Hierarchy</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>Declaration in Working Set</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>Implementors in Workspace</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>Implementors in Project</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>Implementors in Working Set</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>Occurrences in File</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Shift+U]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>Occurrences in File</name>
+    <scope></scope>
+    <sequence><![CDATA[Shift+Command+U]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>Finds all Exception Occurrences</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Shift+T]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Source</category>
+    <name>Remove Occurrence Annotations</name>
+    <scope>Editing Java Source</scope>
+    <sequence><![CDATA[Alt+Shift+U]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.jdt.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>Open Search Dialog</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+H]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.search</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Search</category>
+    <name>File Search</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.search</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>File</category>
+    <name>New</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+N]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>File</category>
+    <name>Close</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+W]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>File</category>
+    <name>Close</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+F4]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>File</category>
+    <name>Close All</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Shift+W]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>File</category>
+    <name>Close All</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Shift+F4]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>File</category>
+    <name>Save</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+S]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>File</category>
+    <name>Save All</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Shift+S]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>File</category>
+    <name>Print</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+P]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>File</category>
+    <name>Properties</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Enter]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Undo</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Z]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Redo</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Y]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Cut</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+X]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Copy</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+C]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Paste</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+V]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Select All</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+A]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Delete</name>
+    <scope></scope>
+    <sequence><![CDATA[Delete]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Find and Replace</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+F]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Open Resource</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Shift+R]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Next</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+.]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Previous</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+,]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Backward History</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Left]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Forward History</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Right]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Project</category>
+    <name>Build All</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+B]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Switch to Editor</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+E]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Show System Menu</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+-]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Show View Menu</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+F10]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Activate Editor</name>
+    <scope></scope>
+    <sequence><![CDATA[F12]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Maximize Active View or Editor</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+M]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Next Editor</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+F6]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Previous Editor</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Shift+F6]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Next View</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+F7]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Previous View</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Shift+F7]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Next Perspective</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+F8]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Previous Perspective</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Shift+F8]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>File</category>
+    <name>Save</name>
+    <scope></scope>
+    <sequence><![CDATA[Command+S]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>File</category>
+    <name>Save All</name>
+    <scope></scope>
+    <sequence><![CDATA[Shift+Command+S]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>File</category>
+    <name>Print</name>
+    <scope></scope>
+    <sequence><![CDATA[Command+P]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Undo</name>
+    <scope></scope>
+    <sequence><![CDATA[Command+Z]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Redo</name>
+    <scope></scope>
+    <sequence><![CDATA[Command+Y]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Cut</name>
+    <scope></scope>
+    <sequence><![CDATA[Command+X]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Copy</name>
+    <scope></scope>
+    <sequence><![CDATA[Command+C]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Paste</name>
+    <scope></scope>
+    <sequence><![CDATA[Command+V]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Select All</name>
+    <scope></scope>
+    <sequence><![CDATA[Command+A]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Find and Replace</name>
+    <scope></scope>
+    <sequence><![CDATA[Command+F]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Open Resource</name>
+    <scope></scope>
+    <sequence><![CDATA[Shift+Command+R]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Next</name>
+    <scope></scope>
+    <sequence><![CDATA[Command+.]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Previous</name>
+    <scope></scope>
+    <sequence><![CDATA[Command+,]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Project</category>
+    <name>Build All</name>
+    <scope></scope>
+    <sequence><![CDATA[Command+B]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Show View Menu</name>
+    <scope></scope>
+    <sequence><![CDATA[Command+F10]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Next Editor</name>
+    <scope></scope>
+    <sequence><![CDATA[Command+F6]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Previous Editor</name>
+    <scope></scope>
+    <sequence><![CDATA[Shift+Command+F6]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Next View</name>
+    <scope></scope>
+    <sequence><![CDATA[Command+F7]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Previous View</name>
+    <scope></scope>
+    <sequence><![CDATA[Shift+Command+F7]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Next Perspective</name>
+    <scope></scope>
+    <sequence><![CDATA[Command+F8]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Previous Perspective</name>
+    <scope></scope>
+    <sequence><![CDATA[Shift+Command+F8]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Cut</name>
+    <scope></scope>
+    <sequence><![CDATA[Shift+Delete]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>gtk</platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Copy</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Insert]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>gtk</platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Paste</name>
+    <scope></scope>
+    <sequence><![CDATA[Shift+Insert]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>gtk</platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Cut</name>
+    <scope></scope>
+    <sequence><![CDATA[Shift+Delete]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>motif</platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Copy</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Insert]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>motif</platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Paste</name>
+    <scope></scope>
+    <sequence><![CDATA[Shift+Insert]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform>motif</platform>
+  </keybinding>
+  <keybinding>
+    <category>File</category>
+    <name>Close</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+X, K]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>File</category>
+    <name>Close All</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+X, Ctrl+C]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>File</category>
+    <name>Save</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+X, Ctrl+S]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>File</category>
+    <name>Save All</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+X, S]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>File</category>
+    <name>Print</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+F9]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>File</category>
+    <name>Print</name>
+    <scope></scope>
+    <sequence><![CDATA[Esc, F9]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Undo</name>
+    <scope></scope>
+    <sequence><![CDATA[F9]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Undo</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+X, U]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Undo</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Shift+-]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Redo</name>
+    <scope></scope>
+    <sequence><![CDATA[F10]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Cut</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+W]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Cut</name>
+    <scope></scope>
+    <sequence><![CDATA[Shift+Delete]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Copy</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+W]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Copy</name>
+    <scope></scope>
+    <sequence><![CDATA[Esc, W]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Copy</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Paste</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Y]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Paste</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Select All</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+X, H]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Find and Replace</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+R]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Find and Replace</name>
+    <scope></scope>
+    <sequence><![CDATA[Esc, R]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Switch to Editor</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+X, Ctrl+B]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Content Assist</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+/]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Context Information</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+?]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Context Information</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Shift+?]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Quick Diff Toggle</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+Shift+Q]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.editors</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Run</category>
+    <name>Run Last Launched External Tool</name>
+    <scope></scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.externaltools</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Delete Line</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+D]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Delete to End of Line</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Delete to End of Line</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform>gtk</platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Find Next</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+K]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Find Previous</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+Shift+K]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Incremental Find</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+J]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Incremental Find Reverse</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+Shift+J]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Go to Line</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+L]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Scroll Line Up</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+Up]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Scroll Line Down</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+Down]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Toggle Overwrite</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Insert]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Show Ruler Context Menu</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+F10]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Content Assist</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Space]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Context Information</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Shift+Space]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Go to Last Edit Location</name>
+    <scope></scope>
+    <sequence><![CDATA[Ctrl+Q]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Insert Line Below Current Line</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Shift+Enter]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Insert Line Above Current Line</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+Shift+Enter]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Move Lines Up</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Alt+Up]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Move Lines Down</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Alt+Down]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Duplicate Lines</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+Alt+Up]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Copy Lines</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+Alt+Down]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>To Upper Case</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+Shift+X]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>To Lower Case</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+Shift+Y]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Show Selected Element Only</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Next Word</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+Right]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Previous Word</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+Left]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Delete Next Word</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+Delete]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Delete Previous Word</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+Backspace]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Select Next Word</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+Shift+Right]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Select Previous Word</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+Shift+Left]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Content Assist</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+/]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale>zh</locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Context Information</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+?]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale>zh</locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Context Information</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Shift+?]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale>zh</locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Window</category>
+    <name>Show Ruler Context Menu</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Command+F10]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Delete Line</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Command+D]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Delete to End of Line</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Find Next</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Command+K]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Find Previous</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Shift+Command+K]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Incremental Find</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Command+J]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Incremental Find Reverse</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Shift+Command+J]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Go to Line</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Command+L]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Scroll Line Up</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Command+Up]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Scroll Line Down</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Command+Down]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Content Assist</name>
+    <scope></scope>
+    <sequence><![CDATA[Command+Space]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Context Information</name>
+    <scope></scope>
+    <sequence><![CDATA[Shift+Command+Space]]></sequence>
+    <configuration>Default</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform>carbon</platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Cut to Beginning of Line</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Alt+0, Ctrl+K]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Cut to Beginning of Line</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Esc, 0, Ctrl+K]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Cut to End of Line</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+K]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Set Mark</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+Space]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Set Mark</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+2]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Clear Mark</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+G]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Swap Mark</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+X, Ctrl+X]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Incremental Find</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+S]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Incremental Find Reverse</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+R]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Line Up</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+P]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Line Down</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+N]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Line Start</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+A]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Line End</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+E]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Navigate</category>
+    <name>Go to Line</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+X, G]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Previous Column</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+B]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Next Column</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+F]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Page Up</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Alt+V]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Page Up</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Esc, V]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Page Down</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+V]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Previous Word</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Alt+B]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Previous Word</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Esc, B]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Next Word</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Alt+F]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Next Word</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Esc, F]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Text Start</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Alt+<]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Text Start</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Alt+Shift+<]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Text Start</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Esc, <]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Text Start</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Esc, Shift+<]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Text Start</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+X, []]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Text End</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Alt+>]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Text End</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Alt+Shift+>]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Text End</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Esc, >]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Text End</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Esc, Shift+>]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Text End</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+X, ]]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Scroll Line Up</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Alt+Z]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Scroll Line Up</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Esc, Z]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Scroll Line Down</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+Z]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Delete Next</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Ctrl+D]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Delete Previous Word</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Alt+Backspace]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Delete Previous Word</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Esc, Backspace]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Delete Next Word</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Alt+D]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Text Editing</category>
+    <name>Delete Next Word</name>
+    <scope>Editing Text</scope>
+    <sequence><![CDATA[Esc, D]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Content Assist</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+/]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Context Information</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+?]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+  <keybinding>
+    <category>Edit</category>
+    <name>Context Information</name>
+    <scope></scope>
+    <sequence><![CDATA[Alt+Shift+?]]></sequence>
+    <configuration>Emacs</configuration>
+    <plugin>org.eclipse.ui.workbench.texteditor</plugin>
+    <locale></locale>
+    <platform></platform>
+  </keybinding>
+</keybindings>

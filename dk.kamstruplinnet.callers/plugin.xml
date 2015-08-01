@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+   id="dk.kamstruplinnet.callers"
+   name="%pluginName"
+   version="0.6.0"
+   provider-name="%providerName"
+   class="dk.kamstruplinnet.callers.CallersPlugin">
+
+   <runtime>
+      <library name="callers.jar">
+         <packages prefixes="dk.kamstruplinnet.callers"/>
+      </library>
+   </runtime>
+   <requires>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.boot"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.swt"/>
+      <import plugin="org.eclipse.jdt.core"/>
+      <import plugin="org.eclipse.jdt.ui"/>
+      <import plugin="dk.kamstruplinnet.implementors.core" version="0.0.8"/>
+   </requires>
+
+
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            name="%callHierarchyViewName"
+            icon="icons/CallHierarchy.gif"
+            class="dk.kamstruplinnet.callers.views.CallersView"
+            id="dk.kamstruplinnet.callers.view">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editorActions">
+      <editorContribution
+            targetID="org.eclipse.jdt.ui.CompilationUnitEditor"
+            id="dk.kamstruplinnet.callers.update">
+         <action
+               definitionId="dk.kamstruplinnet.callers.updateaction.key"
+               label="%toolbarLabel"
+               icon="icons/CallHierarchy.gif"
+               class="dk.kamstruplinnet.callers.actions.UpdateCallersEditorActionDelegate"
+               toolbarPath="additions"
+               id="dk.kamstruplinnet.callers.updateaction">
+         </action>
+      </editorContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <viewerContribution
+            targetID="#CompilationUnitEditorContext"
+            id="dk.kamstruplinnet.callers.popup.editor">
+         <action
+               label="%action.label"
+               class="dk.kamstruplinnet.callers.actions.UpdateCallersEditorActionDelegate"
+               menubarPath="additions"
+               id="dk.kamstruplinnet.callers.updatepopupaction">
+         </action>
+      </viewerContribution>
+      <objectContribution
+            objectClass="org.eclipse.jdt.core.IMethod"
+            id="dk.kamstruplinnet.callers.popup.explorers">
+         <action
+               label="%action.label"
+               class="dk.kamstruplinnet.callers.actions.UpdateCallersObjectActionDelegate"
+               menubarPath="additions"
+               enablesFor="1"
+               id="dk.kamstruplinnet.callers.popup.explorer">
+         </action>
+      </objectContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            name="%action.name"
+            description="%action.description"
+            category="org.eclipse.ui.category.navigate"
+            id="dk.kamstruplinnet.callers.updateaction.key">
+      </command>
+      <keyBinding
+            string="Ctrl+Alt+H"
+            scope="org.eclipse.jdt.ui.javaEditorScope"
+            command="dk.kamstruplinnet.callers.updateaction.key"
+            configuration="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </keyBinding>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            name="%preferencesName"
+            category="org.eclipse.jdt.ui.preferences.JavaBasePreferencePage"
+            class="dk.kamstruplinnet.callers.preferences.CallersPreferenceBasePage"
+            id="dk.kamstruplinnet.callers.CallersPreferenceBasePage">
+      </page>
+      <page
+            name="%preferencesFilterName"
+            category="dk.kamstruplinnet.callers.CallersPreferenceBasePage"
+            class="dk.kamstruplinnet.callers.preferences.CallersPreferenceFilterPage"
+            id="dk.kamstruplinnet.callers.CallersPreferenceFilterPage">
+      </page>
+   </extension>
+
+</plugin>

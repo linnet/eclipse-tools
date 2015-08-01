@@ -1,0 +1,85 @@
+actset.label = Quickmarks Both Styles
+actset.description = Allows to set/jump to up to 10 quick bookmarks with one keystroke
+
+menu.gotoQuickmark.label = Goto &Quickmark
+menu.setQuickmark.label = &Set/Delete Quickmark
+
+act.gotomark0.label = Go to Mark &0
+act.gotomark1.label = Go to next Mark &1
+act.gotomark101.label = Go to &previous Mark 1
+act.gotomark2.label = Go to Mark &2
+act.gotomark3.label = Go to Mark &3
+act.gotomark4.label = Go to Mark &4
+act.gotomark5.label = Go to Mark &5
+act.gotomark6.label = Go to Mark &6
+act.gotomark7.label = Go to Mark &7
+act.gotomark8.label = Go to Mark &8
+act.gotomark9.label = Go to Mark &9
+
+act.gotomark1.label.ms = Go to &next Quickmark
+act.gotomark101.label.ms = Go to &previous Quickmark
+
+act.setmark0.label = Set Mark &0
+act.setmark1.label = Set Mark &1
+act.setmark2.label = Set Mark &2
+act.setmark3.label = Set Mark &3
+act.setmark4.label = Set Mark &4
+act.setmark5.label = Set Mark &5
+act.setmark6.label = Set Mark &6
+act.setmark7.label = Set Mark &7
+act.setmark8.label = Set Mark &8
+act.setmark9.label = Set Mark &9
+
+act.setmark1.label.ms = &Set Quickmark
+
+cmd.gotomark0.description = Jumps to Quickmark 0, opening the document in it's editor, when neccessary. See notes for 'Goto Mark 1/2'!
+cmd.gotomark0.name = Go to Mark 0
+cmd.gotomark1.description = Jumps to next Quickmark 1. Note, that the default key binding is used elsewhere (JavaEditor -> QuickFix). Redefine that binding to use Quickmarks consistenly.
+cmd.gotomark1.name = Go to Mark 1 (next)
+cmd.gotomark101.description = Jumps to previous Quickmark 1. See comment for 'Go to Mark 0'.
+cmd.gotomark101.name = Go to Mark 1 (previous)
+cmd.gotomark2.description = Jumps to Quickmark 2. Note, that the default key binding is used elsewhere (Emacs -> Set Mark). Redefine that binding to use Quickmarks consistenly.
+cmd.gotomark2.name = Go to Mark 2
+cmd.gotomark3.description = Jumps to Quickmark 3. See comment for 'Go to Mark 0'.
+cmd.gotomark3.name = Go to Mark 3
+cmd.gotomark4.description = Jumps to Quickmark 4. See comment for 'Go to Mark 0'.
+cmd.gotomark4.name = Go to Mark 4
+cmd.gotomark5.description = Jumps to Quickmark 5. See comment for 'Go to Mark 0'.
+cmd.gotomark5.name = Go to Mark 5
+cmd.gotomark6.description = Jumps to Quickmark 6. See comment for 'Go to Mark 0'.
+cmd.gotomark6.name = Go to Mark 6
+cmd.gotomark7.description = Jumps to Quickmark 7. See comment for 'Go to Mark 0'.
+cmd.gotomark7.name = Go to Mark 7
+cmd.gotomark8.description = Jumps to Quickmark 8. See comment for 'Go to Mark 0'.
+cmd.gotomark8.name = Go to Mark 8
+cmd.gotomark9.description = Jumps to Quickmark 9. See comment for 'Go to Mark 0'.
+cmd.gotomark9.name = Go to Mark 9
+
+cmd.gotomark1.description.ms = Jumps to the next Quickmark in the current scope.
+cmd.gotomark1.name.ms = Go to next Quickmark
+cmd.gotomark101.description.ms = Jumps to the previous Quickmark in the current scope.
+cmd.gotomark101.name.ms = Go to previous Quickmark
+
+cmd.setmark0.description = Sets Quickmark 0 at start of the current selection.
+cmd.setmark0.name = Set Mark 0
+cmd.setmark1.description = Sets Quickmark 1 at start of the current selection.
+cmd.setmark1.name = Set Mark 1
+cmd.setmark2.description = Sets Quickmark 2 at start of the current selection.
+cmd.setmark2.name = Set Mark 2
+cmd.setmark3.description = Sets Quickmark 3 at start of the current selection.
+cmd.setmark3.name = Set Mark 3
+cmd.setmark4.description = Sets Quickmark 4 at start of the current selection.
+cmd.setmark4.name = Set Mark 4
+cmd.setmark5.description = Sets Quickmark 5 at start of the current selection.
+cmd.setmark5.name = Set Mark 5
+cmd.setmark6.description = Sets Quickmark 6 at start of the current selection.
+cmd.setmark6.name = Set Mark 6
+cmd.setmark7.description = Sets Quickmark 7 at start of the current selection.
+cmd.setmark7.name = Set Mark 7
+cmd.setmark8.description = Sets Quickmark 8 at start of the current selection.
+cmd.setmark8.name = Set Mark 8
+cmd.setmark9.description = Sets Quickmark 9 at start of the current selection.
+cmd.setmark9.name = Set Mark 9
+
+cmd.setmark1.description.ms = Sets a Quickmark at start of the current selection.
+cmd.setmark1.name.ms = Set Quickmark

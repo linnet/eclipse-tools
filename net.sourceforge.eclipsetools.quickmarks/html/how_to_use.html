@@ -1,0 +1,77 @@
+<!-- $Header: /cvsroot/eclipse-tools/net.sourceforge.eclipsetools.quickmarks/html/how_to_use.html,v 1.1 2004/07/16 00:59:08 deerwood Exp $ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+		<title>Quickmarks Plugin: How to use it</title>
+		<link href="doc.css" rel="stylesheet" type="text/css" media="all" />
+	</head>
+	<body>
+		<h1 class="head">Quickmarks Plugin: How to use it</h1>
+		<p>With default settings:</p>
+		<h2>1. Set a Quickmark</h2>
+		<p>Move the cursor to some location of interest, even highlight/select 
+			some region in your text editor and press <em 
+			class="Key">Shift+Ctrl+9</em>. Note the icon in the bar left to the 
+			editor: it will show a decorated 9. Note also the (yellow) mark in 
+			the overview bar to the right of your editor and the message in the 
+			statusline ... which disappears after some short time.</p>
+		<p>
+			<img src="img/setmark.gif" alt="" 
+				title="display of a Quickmark left/right to the editor"/></p>
+		<p>
+			<img src="img/sl_setmark.gif" alt="" title="newly set a Quickmark"/></p>
+
+		<h2>2. Jump to a Quickmark</h2>
+		<p>Move the cursor elsewhere, or close the editor/document with the 
+			Quickmark 9, even close <strong>all</strong> Editors. Now press <em 
+			class="Key">Alt+9</em>. Instantly you'll be taken to the same 
+			location you have set the Quickmark on, opening the right editor 
+			when required. Your previous selection is remebered and 
+			highlighted. Note the message in the statusline.</p>
+		<p>
+			<img src="img/sl_gotomark.gif" alt="" 
+				title="jumped to a Quickmark"/></p>
+
+		<h2>3. Delete a Quickmark</h2>
+		<p>Jump to a Quickmark as described above, then try to add the same 
+			mark number again <em class="Key">Shift+Ctrl+9</em>; this time the 
+			Quickmark will be deleted. Trying to set a Quickmark at the same 
+			location twice is interpreted as a delete request. The decorations 
+			left/right to the editor disappear and the delete is messaged in 
+			the statusline.</p>
+		<p>
+			<img src="img/sl_deletemark.gif" alt="" 
+				title="deleted a Quickmark"/></p>
+
+		<h2>4. Move a Quickmark</h2>
+		<p>Having a Quickmark 9 set somewhere move the cursor/selection 
+			elsewhere, be it in the same or any other document, even in a 
+			totally unrelated project. Then try to add the same mark number 
+			again <em class="Key">Shift+Ctrl+9</em>. The old mark is deleted 
+			and a new mark with the same number is set at the current location 
+			(the Quickmark is moved).</p>
+		<p>Most probably you will not see the removal of the old mark. The old 
+			mark might be far away, even in some other document. Note the 
+			statusline message, it indicates what happened. There is no undo 
+			(yet) for marker moving. The old position is silently lost!</p>
+		<p>
+			<img src="img/sl_movedmark.gif" alt="" title="moved a Quickmark"/>
+		</p>
+	<p>See:</p>
+	<ul>
+		<li><a href="what_it_does.html">What it does</a></li>
+		<li><strong>How to use it</strong></li>
+		<li>Reference
+			<ul>
+				<li><a href="reference/evidence.html">Evidence in the user interface</a></li>
+				<li><a href="reference/preference.html">Preference options</a></li>
+				<li><a href="reference/visibility.html">Changing visibility in views</a></li>
+				<li><a href="reference/styles.html">Switching to another style</a></li>
+			</ul>
+		</li>		
+	</ul>
+	</body>
+</html>
+<!--EOF-->

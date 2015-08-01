@@ -1,0 +1,144 @@
+<!-- $Header: /cvsroot/eclipse-tools/net.sourceforge.eclipsetools.quickmarks/html/reference/styles.html,v 1.2 2004/07/18 02:42:49 deerwood Exp $ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<title>Quickmarks Plugin: Switching Styles</title>
+	<link href="../doc.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+	<h1 class="head">Quickmarks Plugin: Switching Styles</h1>
+	<h2>"M" company style</h2>
+	<p>If you prefer to work with Quickmarks "M company Style" (only 3 key 
+		bindings instead of 20, but 'toggling' through your scope only, no 
+		'mark move') you can configure this plugin to do that. A mild form 
+		would be to have the Quickmarks 1-9 to still work "B company style", 
+		and use Quickmark 0 to work "M company Style" (the best of both 
+		worlds):</p>
+	<ul>
+		<li>choose the <a href="preference.html#multiple">option to have dups 
+			all the time</a></li>
+		<li>redefine the binding for <em>Set/Delete Mark 0</em> to, say, <em 
+			class="Key">Shift+Ctrl+F12</em>, the binding for <em>Go to next 
+			Mark 0</em> to <em class="Key">Ctrl+F12</em> and the binding for 
+			<em>Go to previous Mark 0</em> to <em 
+			class="Key">Shift+F12</em></li>
+		<li>set the scope to <em>document</em> (or whatever you prefer)</li>
+	</ul>
+	<p>Now you can use the Quickmark 0 in your preferred style, and optionally
+		still use all other nine Quickmarks.</p>
+	<p>An extreme form would be to even unbind all the keys for Quickmarks 1-9 
+		additionally. As this is much work to do we deliver another 
+		<code>plugin.xml.msstyle</code>. If you really want to only work with 
+		this (e.g. to get the key bindings available for other actions), 
+		then:</p>
+	<ul>
+		<li>
+			<strong>if you run Quickmarks under Eclipse 3 then be sure to have 
+				read <a href="visibility.html#eclipse3">this very important 
+				note</a> and follow the procedure outlined, to avoid any 
+				pitfalls!</strong>
+		</li>
+		<li>stop Eclipse</li>
+		<li>rename <code>plugin.xml</code> to <code>plugin.xml.original</code></li>
+		<li>copy <code>plugin.xml.msstyle</code> over <code>plugin.xml</code></li>
+		<li>start Eclipse</li>
+		<li>open the Quickmark <a 
+			href="preference.html#multiple">preferences</a> and check the 
+			option to have dups all the time</li>
+		<li>set your scope preference to <em>document</em> (for really pure
+			MS style) or the scope you prefer</li>
+		<li>better set the delete option to 'same line'</li>
+		<li><a href="preference.html#pattern">edit the Quickmarks name</a> to, 
+			say, <code>"Quickmark at line {1}"</code></li>
+		<li>be sure to (again) configure all perspectives to enable Quickmarks, 
+			where you want to have them</li>
+	</ul>
+	<p>When you have done this, the menu has changed:</p>
+	<p><img src="../img/menu-ms.gif" alt="" 
+			title="the menu in pure MS style"/></p>
+	<p><a href="evidence.html#menu">Compare to the default</a>. The key binding 
+		section in the preferences is changed accordingly: there are only 3 
+		actions left to bind keys to. Other changes are:</p>
+	<ul>
+		<li>Now there are also toolbar buttons.</li>
+		<li>The Quickmark icon left to any editor shows as an arrow pointing right.</li>
+		<li>The plugin doesn't requiere early startup anymore and isn't listed there.</li>
+	</ul>
+
+	<a id="purist" name="purist"></a>
+	<h2>Pure "B" company style</h2>
+	<p>If you prefer to work with the original key bindings <em 
+		class="Key">Ctrl+0-9</em> for jumping to a Quickmark instead of the 
+		default ones <em class="Key">Alt+0-9</em>, then you might manually
+		redefine all the bindings yourself.</p>
+	<p>Or you may use the delivered *.bstyle files:</p>
+	<ul>
+		<li>
+			<strong>if you run Quickmarks under Eclipse 3 then be sure to have 
+				read <a href="visibility.html#eclipse3">this very important 
+				note</a> and follow the procedure outlined, to avoid any 
+				pitfalls!</strong>
+		</li>
+		<li>stop Eclipse</li>
+		<li>rename <code>plugin.xml</code> to <code>plugin.xml.original</code></li>
+		<li>copy <code>plugin.xml.bstyle</code> over <code>plugin.xml</code></li>
+		<li>rename <code>plugin.properties</code> to <code>plugin.properties.original</code></li>
+		<li>copy <code>plugin.properties.bstyle</code> over <code>plugin.properties</code></li>
+		<li>start Eclipse</li>
+	</ul>
+	<p>Note however, that there are 2 key binding conflicts:</p>
+	<ol>
+		<li>'Go to Quickmark 1' bound to <em class="Key">Ctrl+1</em> is hidden 
+			in the Java editor by 'Quickfix' bound to the same key</li>
+		<li>'Go to Quickmark 2' bound to <em class="Key">Ctrl+2</em> is hidden
+			in 'Emacs' configuration by 'Set mark' bound to the same key</li>
+	</ol>
+	<p>Especially the 'Quickfix' is so important when developing Java code, that
+		most people might not consider rebinding that action. If you are one of
+		them you must live without Quickmark 1 or (inconsistently) jump to it
+		with <em class="Key">Alt+1</em> bound to 'Go to previous Quickmark 1'
+		or by means of the <a href="evidence.html#menu">menu</a>. If you decide
+		to live without Quickmark 1 then you better unbind 'Set Quickmark 1'
+		to not accidentally set it anywhere.</p>
+	<h3>Suggestion for rebinding "Quickfix"</h3>
+	<p>I always wondered, why <em class="Key">Ctrl+1</em> was used for 
+		"Quickfix", a much better binding seems <em class="Key">Ctrl+Q</em> to 
+		me, which is even a little bit better reachable with short fingers. But 
+		<em class="Key">Ctrl+Q</em> is bound to "Go to Last Edit Location" ... 
+		now what, where is the 'Q' in that actions name??! And it is the 
+		<em>only</em> action using any modifier combination together with the 
+		letter 'Q'. And it seems to be closely related to "Back" and "Forward", 
+		which are bound to <em class="Key">Alt+Arrow_Left</em> and <em 
+		class="Key">Alt+Arrow_Right</em> respectively. And <em 
+		class="Key">Alt+Arrow_Up</em> is free! So I suggest:</p>
+	<ul>
+		<li>rebind "Go to Last Edit Location" to <em class="Key">Alt+Arrow_Up</em></li>
+		<li>rebind "Quickfix" to the now available <em class="Key">Ctrl+Q</em></li>
+	</ul>
+	<h3>Suggestion for rebinding "Set mark" in "Emacs" configuration</h3>
+	<p>If you are an Emacs purist, then you probably havn't this extension 
+		installed anyway, have you? If you work mostly with the 'point and mark'
+		concept of Emacs and only occasionally use other Quickmarks then you
+		might again just don't use Quickmark 2. Else:</p>
+	<ul>
+		<li>rebind "Set mark" to <em class="Key">Ctrl+M</em>, which is unused.</li>
+	</ul>
+
+	<p>See:</p>
+	<ul>
+		<li><a href="../what_it_does.html">What it does</a></li>
+		<li><a href="../how_to_use.html">How to use it</a></li>
+		<li>Reference
+			<ul>
+				<li><a href="evidence.html">Evidence in the user interface</a></li>
+				<li><a href="preference.html">Preference options</a></li>
+				<li><a href="visibility.html">Changing visibility in views</a></li>
+				<li><strong>Switching to another style</strong></li>
+			</ul>
+		</li>		
+	</ul>
+</body>
+</html>
+<!--EOF-->

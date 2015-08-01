@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<document>
+   <properties>
+      <author email="linnet@nospam.users.sourceforge.net">Jesper Kamstrup Linnet</author>
+
+      <title>EJB awareness</title>
+   </properties>
+
+   <body>
+      <section name="EJB awareness">
+        <p>
+        The Implementors plugin needs to be made aware of EJB deployment descriptors in order to be able to
+        jump to implementation/interface.
+        </p>
+        <p>
+        In order to do this, right click on a Java project and show the properties.
+        Here, you can enable or disable the EJB awareness of the project. When EJB awareness is enabled, it's possible
+        to add deployment descriptors (ejb-jar.xml) which refer to interfaces (remote, remote home, local, and local home)
+        as well as to the implementing class. You may add multiple deployment descriptors.
+        </p>
+        <p>
+        <img src="images/ejbproperties.png" title="Property page for associating EJB deployment descriptors" alt="Property page for associating EJB deployment descriptors" />
+        </p>
+      </section>
+   </body>
+</document>
+
